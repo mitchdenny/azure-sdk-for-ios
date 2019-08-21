@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.8.2)
+  - MicrosoftCognitiveServicesSpeech-iOS (1.6.0)
+  - MSColorPicker (1.0.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.8.1)
+  - MicrosoftCognitiveServicesSpeech-iOS (~> 1.6)
+  - MSColorPicker
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - MicrosoftCognitiveServicesSpeech-iOS
+    - MSColorPicker
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  MicrosoftCognitiveServicesSpeech-iOS: ca23ee6ace9328ede5483feff79fcd6a3b3e2dfb
+  MSColorPicker: 90b8663b99d6c5c3ba10ccfaa4a600b844f8738e
+
+PODFILE CHECKSUM: f794164f7e8757a9982d734e97a7c09e1ad7dff6
+
+COCOAPODS: 1.7.5
