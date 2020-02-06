@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Structures  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Section/Structures" class="dashAnchor"></a>
+
+    <a title="Structures  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          AzureStorageBlob 0.1 Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/Azure/azure-sdk-for-ios">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">AzureStorageBlob Reference</a>
+      <img class="carat" src="img/carat.png" />
+      Structures  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BlobTransfer.html">BlobTransfer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/StorageBlobClient.html">StorageBlobClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/StorageBlobClient/ApiVersion.html">– ApiVersion</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/AccessTier.html">AccessTier</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/BlobType.html">BlobType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/CopyStatus.html">CopyStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/LeaseDuration.html">LeaseDuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/LeaseState.html">LeaseState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/LeaseStatus.html">LeaseStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/StorageHTTPHeader.html">StorageHTTPHeader</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/TransferState.html">TransferState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/TransferType.html">TransferType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/HTTPHeaders.html">HTTPHeaders</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/BlobDownloadDelegate.html">BlobDownloadDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/BlobDownloader.html">BlobDownloader</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/BlobUploadDelegate.html">BlobUploadDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/BlobUploader.html">BlobUploader</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/Transfer.html">Transfer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/TransferDelegate.html">TransferDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/BlobItem.html">BlobItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/BlobProperties.html">BlobProperties</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/ContainerItem.html">ContainerItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/ContainerProperties.html">ContainerProperties</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/CustomerProvidedEncryptionKey.html">CustomerProvidedEncryptionKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/DownloadBlobOptions.html">DownloadBlobOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/EncryptionOptions.html">EncryptionOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/LeaseAccessConditions.html">LeaseAccessConditions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/ListBlobsOptions.html">ListBlobsOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/ListBlobsOptions/ListBlobsInclude.html">– ListBlobsInclude</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/ListContainersOptions.html">ListContainersOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/ListContainersOptions/ListContainersInclude.html">– ListContainersInclude</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/LocalURL.html">LocalURL</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/LocalURL/KnownDirectory.html">– KnownDirectory</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/ModifiedAccessConditions.html">ModifiedAccessConditions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/RangeOptions.html">RangeOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/StorageBlobClientOptions.html">StorageBlobClientOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/StorageSASCredential.html">StorageSASCredential</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/StorageSharedKeyCredential.html">StorageSharedKeyCredential</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/TransferProgress.html">TransferProgress</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/UploadBlobOptions.html">UploadBlobOptions</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>Structures</h1>
+            <p>The following structures are available globally.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0B13SASCredentialV"></a>
+                    <a name="//apple_ref/swift/Struct/StorageSASCredential" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0B13SASCredentialV">StorageSASCredential</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A Storage shared access signature credential object.</p>
+
+                        <a href="Structs/StorageSASCredential.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StorageSASCredential</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0B19SharedKeyCredentialV"></a>
+                    <a name="//apple_ref/swift/Struct/StorageSharedKeyCredential" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0B19SharedKeyCredentialV">StorageSharedKeyCredential</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A Storage account shared key credential object.</p>
+
+<p><strong>WARNING</strong>: Shared keys are inherently insecure in end-user facing applications such as mobile and desktop apps.
+Shared keys provide full access to an entire storage account and should not be shared with end users. Since mobile
+and desktop apps are inherently end-user facing, it&rsquo;s highly recommended that storage account shared key credentials
+not be used in production for such applications.</p>
+
+                        <a href="Structs/StorageSharedKeyCredential.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StorageSharedKeyCredential</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Data%20Structures"></a>
+                <a name="//apple_ref/swift/Section/Data Structures" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Data%20Structures"></a>
+                  <h3 class="section-name"><p>Data Structures</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob16TransferProgressV"></a>
+                    <a name="//apple_ref/swift/Struct/TransferProgress" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob16TransferProgressV">TransferProgress</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Data structure representing the progress of a blob transfer.</p>
+
+                        <a href="Structs/TransferProgress.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TransferProgress</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob8LocalURLV"></a>
+                    <a name="//apple_ref/swift/Struct/LocalURL" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob8LocalURLV">LocalURL</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Structure encapsulating a base-relative local filesystem URL.</p>
+
+                        <a href="Structs/LocalURL.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">LocalURL</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob21LeaseAccessConditionsV"></a>
+                    <a name="//apple_ref/swift/Struct/LeaseAccessConditions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob21LeaseAccessConditionsV">LeaseAccessConditions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Options for accessing a blob based on the condition of a lease. If specified, the operation will be performed only
+if both of the following conditions are met:</p>
+
+<ul>
+<li>The blob&rsquo;s lease is currently active.</li>
+<li>The specified lease ID matches that of the blob.</li>
+</ul>
+
+                        <a href="Structs/LeaseAccessConditions.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">LeaseAccessConditions</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob24ModifiedAccessConditionsV"></a>
+                    <a name="//apple_ref/swift/Struct/ModifiedAccessConditions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob24ModifiedAccessConditionsV">ModifiedAccessConditions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Options for accessing a blob based on its modification date and/or eTag. If specified, the operation will be
+performed only if all the specified conditions are met.</p>
+
+                        <a href="Structs/ModifiedAccessConditions.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ModifiedAccessConditions</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob12RangeOptionsV"></a>
+                    <a name="//apple_ref/swift/Struct/RangeOptions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob12RangeOptionsV">RangeOptions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Options for working on a subset of data for a blob.</p>
+
+                        <a href="Structs/RangeOptions.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RangeOptions</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob17EncryptionOptionsV"></a>
+                    <a name="//apple_ref/swift/Struct/EncryptionOptions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob17EncryptionOptionsV">EncryptionOptions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Blob encryption options.</p>
+
+                        <a href="Structs/EncryptionOptions.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">EncryptionOptions</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob29CustomerProvidedEncryptionKeyV"></a>
+                    <a name="//apple_ref/swift/Struct/CustomerProvidedEncryptionKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob29CustomerProvidedEncryptionKeyV">CustomerProvidedEncryptionKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>All data in Azure Storage is encrypted at-rest using an account-level encryption key.
+In versions 2018-06-17 and newer, you can manage the key used to encrypt blob contents
+and application metadata per-blob by providing an AES-256 encryption key in requests to the storage service.</p>
+
+<p>When you use a customer-provided key, Azure Storage does not manage or persist your key.
+When writing data to a blob, the provided key is used to encrypt your data before writing it to disk.
+A SHA-256 hash of the encryption key is written alongside the blob contents,
+and is used to verify that all subsequent operations against the blob use the same encryption key.
+This hash cannot be used to retrieve the encryption key or decrypt the contents of the blob.
+When reading a blob, the provided key is used to decrypt your data after reading it from disk.
+In both cases, the provided encryption key is securely discarded
+as soon as the encryption or decryption process completes.</p>
+
+                        <a href="Structs/CustomerProvidedEncryptionKey.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CustomerProvidedEncryptionKey</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0bC13ClientOptionsV"></a>
+                    <a name="//apple_ref/swift/Struct/StorageBlobClientOptions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0bC13ClientOptionsV">StorageBlobClientOptions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>User-configurable options for the <code><a href="Classes/StorageBlobClient.html">StorageBlobClient</a></code>.</p>
+
+                        <a href="Structs/StorageBlobClientOptions.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StorageBlobClientOptions</span> <span class="p">:</span> <span class="kt">AzureConfigurable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob21ListContainersOptionsV"></a>
+                    <a name="//apple_ref/swift/Struct/ListContainersOptions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob21ListContainersOptionsV">ListContainersOptions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>User-configurable options for the <code>StorageBlobClient.listContainers</code> operation.</p>
+
+                        <a href="Structs/ListContainersOptions.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListContainersOptions</span> <span class="p">:</span> <span class="kt">AzureOptions</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob16ListBlobsOptionsV"></a>
+                    <a name="//apple_ref/swift/Struct/ListBlobsOptions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob16ListBlobsOptionsV">ListBlobsOptions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>User-configurable options for the <code>StorageBlobClient.listBlobs</code> operation.</p>
+
+                        <a href="Structs/ListBlobsOptions.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListBlobsOptions</span> <span class="p">:</span> <span class="kt">AzureOptions</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob08DownloadC7OptionsV"></a>
+                    <a name="//apple_ref/swift/Struct/DownloadBlobOptions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob08DownloadC7OptionsV">DownloadBlobOptions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>User-configurable options for the <code>StorageBlobClient.download</code> and <code>StorageBlobClient.rawDownload</code> operations.</p>
+
+                        <a href="Structs/DownloadBlobOptions.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DownloadBlobOptions</span> <span class="p">:</span> <span class="kt">AzureOptions</span><span class="p">,</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob06UploadC7OptionsV"></a>
+                    <a name="//apple_ref/swift/Struct/UploadBlobOptions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob06UploadC7OptionsV">UploadBlobOptions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>User-configurable options for the <code>StorageBlobClient.upload</code> and <code>StorageBlobClient.rawUpload</code> operations.</p>
+
+                        <a href="Structs/UploadBlobOptions.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UploadBlobOptions</span> <span class="p">:</span> <span class="kt">AzureOptions</span><span class="p">,</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C4ItemV"></a>
+                    <a name="//apple_ref/swift/Struct/BlobItem" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C4ItemV">BlobItem</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Structure containing data about a blob or blob snapshot.</p>
+
+                        <a href="Structs/BlobItem.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">BlobItem</span> <span class="p">:</span> <span class="kt">XMLModel</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">BlobItem</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV"></a>
+                    <a name="//apple_ref/swift/Struct/BlobProperties" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV">BlobProperties</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Structure containing properties of a blob or blob snapshot.</p>
+
+                        <a href="Structs/BlobProperties.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">BlobProperties</span> <span class="p">:</span> <span class="kt">XMLModel</span><span class="p">,</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob13ContainerItemV"></a>
+                    <a name="//apple_ref/swift/Struct/ContainerItem" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob13ContainerItemV">ContainerItem</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Structure containing data about a blob container.</p>
+
+                        <a href="Structs/ContainerItem.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ContainerItem</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">XMLModel</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob19ContainerPropertiesV"></a>
+                    <a name="//apple_ref/swift/Struct/ContainerProperties" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob19ContainerPropertiesV">ContainerProperties</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Structure containing properties of a blob container.</p>
+
+                        <a href="Structs/ContainerProperties.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ContainerProperties</span> <span class="p">:</span> <span class="kt">XMLModel</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ContainerProperties</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2020 <a class="link" href="https://azure.github.io/azure-sdk/" target="_blank" rel="external">Microsoft</a>. All rights reserved. (Last updated: 2020-04-24)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

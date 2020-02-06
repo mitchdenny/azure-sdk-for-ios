@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LocalURL Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Struct/LocalURL" class="dashAnchor"></a>
+
+    <a title="LocalURL Structure Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          AzureStorageBlob 0.1 Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/Azure/azure-sdk-for-ios">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">AzureStorageBlob Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      LocalURL Structure Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BlobTransfer.html">BlobTransfer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/StorageBlobClient.html">StorageBlobClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/StorageBlobClient/ApiVersion.html">– ApiVersion</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AccessTier.html">AccessTier</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/BlobType.html">BlobType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/CopyStatus.html">CopyStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LeaseDuration.html">LeaseDuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LeaseState.html">LeaseState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LeaseStatus.html">LeaseStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/StorageHTTPHeader.html">StorageHTTPHeader</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/TransferState.html">TransferState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/TransferType.html">TransferType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/HTTPHeaders.html">HTTPHeaders</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BlobDownloadDelegate.html">BlobDownloadDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BlobDownloader.html">BlobDownloader</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BlobUploadDelegate.html">BlobUploadDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BlobUploader.html">BlobUploader</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Transfer.html">Transfer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/TransferDelegate.html">TransferDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/BlobItem.html">BlobItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/BlobProperties.html">BlobProperties</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ContainerItem.html">ContainerItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ContainerProperties.html">ContainerProperties</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/CustomerProvidedEncryptionKey.html">CustomerProvidedEncryptionKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/DownloadBlobOptions.html">DownloadBlobOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/EncryptionOptions.html">EncryptionOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LeaseAccessConditions.html">LeaseAccessConditions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ListBlobsOptions.html">ListBlobsOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ListBlobsOptions/ListBlobsInclude.html">– ListBlobsInclude</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ListContainersOptions.html">ListContainersOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ListContainersOptions/ListContainersInclude.html">– ListContainersInclude</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LocalURL.html">LocalURL</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LocalURL/KnownDirectory.html">– KnownDirectory</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ModifiedAccessConditions.html">ModifiedAccessConditions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/RangeOptions.html">RangeOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/StorageBlobClientOptions.html">StorageBlobClientOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/StorageSASCredential.html">StorageSASCredential</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/StorageSharedKeyCredential.html">StorageSharedKeyCredential</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/TransferProgress.html">TransferProgress</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/UploadBlobOptions.html">UploadBlobOptions</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>LocalURL</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">LocalURL</span></code></pre>
+
+                </div>
+              </div>
+            <p>Structure encapsulating a base-relative local filesystem URL.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob8LocalURLV14KnownDirectoryO"></a>
+                    <a name="//apple_ref/swift/Enum/KnownDirectory" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob8LocalURLV14KnownDirectoryO">KnownDirectory</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Well-known directories that are not part of the existing <code>FileManager.SearchPathDirectory</code> enum.</p>
+
+                        <a href="../Structs/LocalURL/KnownDirectory.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">KnownDirectory</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Static%20methods"></a>
+                <a name="//apple_ref/swift/Section/Static methods" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Static%20methods"></a>
+                  <h3 class="section-name"><p>Static methods</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob8LocalURLV14pathComponents03forC011inContainerSS7dirName_SS04fileL0tSS_SStFZ"></a>
+                    <a name="//apple_ref/swift/Method/pathComponents(forBlob:inContainer:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob8LocalURLV14pathComponents03forC011inContainerSS7dirName_SS04fileL0tSS_SStFZ">pathComponents(forBlob:inContainer:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve the directory and filename components for a blob within a container. Returns a tuple of (<code>dirName</code>,
+<code>fileName</code>), where <code>dirName</code> is the string up to, but not including, the final &lsquo;/&rsquo;, and <code>fileName</code> is the
+component following the final &lsquo;/&rsquo;.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">pathComponents</span><span class="p">(</span>
+    <span class="n">forBlob</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="n">inContainer</span> <span class="nv">container</span><span class="p">:</span> <span class="kt">String</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="nv">dirName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">fileName</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the blob.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>container</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the container</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A tuple of (<code>dirName</code>, <code>fileName</code>)</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20properties"></a>
+                <a name="//apple_ref/swift/Section/Instance properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Instance%20properties"></a>
+                  <h3 class="section-name"><p>Instance properties</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob8LocalURLV11resolvedUrl10Foundation0E0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/resolvedUrl" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob8LocalURLV11resolvedUrl10Foundation0E0VSgvp">resolvedUrl</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The absolute URL resolved from this <code>LocalURL</code> instance. Resolution is performed by replacing the well-known
+directory placeholder (if present) with the current, resolved path to the well-known directory, and then
+appending the path components.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">resolvedUrl</span><span class="p">:</span> <span class="kt">URL</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initializers"></a>
+                  <h3 class="section-name"><p>Initializers</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob8LocalURLV15fromAbsoluteUrlAC10Foundation0E0V_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(fromAbsoluteUrl:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob8LocalURLV15fromAbsoluteUrlAC10Foundation0E0V_tcfc">init(fromAbsoluteUrl:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code>LocalURL</code> from an existing absolute URL.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">fromAbsoluteUrl</span> <span class="nv">absoluteUrl</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob8LocalURLV13fromDirectoryA2C05KnownG0O_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(fromDirectory:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob8LocalURLV13fromDirectoryA2C05KnownG0O_tcfc">init(fromDirectory:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code>LocalURL</code> for a well-known directory.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">fromDirectory</span> <span class="nv">directory</span><span class="p">:</span> <span class="kt"><a href="../Structs/LocalURL/KnownDirectory.html">KnownDirectory</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob8LocalURLV13fromDirectoryACSo012NSSearchPathG0V_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(fromDirectory:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob8LocalURLV13fromDirectoryACSo012NSSearchPathG0V_tcfc">init(fromDirectory:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code>LocalURL</code> for a well-known directory.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">fromDirectory</span> <span class="nv">directory</span><span class="p">:</span> <span class="kt">FileManager</span><span class="o">.</span><span class="kt">SearchPathDirectory</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob8LocalURLV7basedOn03forC011inContainerAC10Foundation0E0V_S2Stcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(basedOn:forBlob:inContainer:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob8LocalURLV7basedOn03forC011inContainerAC10Foundation0E0V_S2Stcfc">init(basedOn:forBlob:inContainer:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code>LocalURL</code> for a location on the local device in which to store a blob downloaded from a container,
+based on a provided base directory.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">basedOn</span> <span class="nv">baseUrl</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span> <span class="n">forBlob</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">inContainer</span> <span class="nv">container</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob8LocalURLV11inDirectory03forC00F9ContainerA2C05KnownG0O_S2Stcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(inDirectory:forBlob:inContainer:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob8LocalURLV11inDirectory03forC00F9ContainerA2C05KnownG0O_S2Stcfc">init(inDirectory:forBlob:inContainer:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code>LocalURL</code> for a location on the local device in which to store a blob downloaded from a container,
+within a well-known directory.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">inDirectory</span> <span class="nv">directory</span><span class="p">:</span> <span class="kt"><a href="../Structs/LocalURL/KnownDirectory.html">KnownDirectory</a></span><span class="p">,</span> <span class="n">forBlob</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">inContainer</span> <span class="nv">container</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob8LocalURLV11inDirectory03forC00F9ContainerACSo012NSSearchPathG0V_S2Stcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(inDirectory:forBlob:inContainer:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob8LocalURLV11inDirectory03forC00F9ContainerACSo012NSSearchPathG0V_S2Stcfc">init(inDirectory:forBlob:inContainer:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code>LocalURL</code> for a location on the local device in which to store a blob downloaded from a container,
+within a well-known directory.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="n">inDirectory</span> <span class="nv">directory</span><span class="p">:</span> <span class="kt">FileManager</span><span class="o">.</span><span class="kt">SearchPathDirectory</span><span class="p">,</span>
+    <span class="n">forBlob</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="n">inContainer</span> <span class="nv">container</span><span class="p">:</span> <span class="kt">String</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob8LocalURLV19appendPathComponentyySSF"></a>
+                    <a name="//apple_ref/swift/Method/appendPathComponent(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob8LocalURLV19appendPathComponentyySSF">appendPathComponent(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Append the given path component to this <code>LocalURL</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">appendPathComponent</span><span class="p">(</span><span class="n">_</span> <span class="nv">pathComponent</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob8LocalURLV20appendPathComponents03forC011inContainerySS_SStF"></a>
+                    <a name="//apple_ref/swift/Method/appendPathComponents(forBlob:inContainer:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob8LocalURLV20appendPathComponents03forC011inContainerySS_SStF">appendPathComponents(forBlob:inContainer:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Append the directory and filename components for a blob within a container to this <code>LocalURL</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">appendPathComponents</span><span class="p">(</span><span class="n">forBlob</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">inContainer</span> <span class="nv">container</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2020 <a class="link" href="https://azure.github.io/azure-sdk/" target="_blank" rel="external">Microsoft</a>. All rights reserved. (Last updated: 2020-04-24)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

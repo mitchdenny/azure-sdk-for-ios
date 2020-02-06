@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BlobProperties Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Struct/BlobProperties" class="dashAnchor"></a>
+
+    <a title="BlobProperties Structure Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          AzureStorageBlob 0.1 Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/Azure/azure-sdk-for-ios">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">AzureStorageBlob Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      BlobProperties Structure Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BlobTransfer.html">BlobTransfer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/StorageBlobClient.html">StorageBlobClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/StorageBlobClient/ApiVersion.html">– ApiVersion</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AccessTier.html">AccessTier</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/BlobType.html">BlobType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/CopyStatus.html">CopyStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LeaseDuration.html">LeaseDuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LeaseState.html">LeaseState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LeaseStatus.html">LeaseStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/StorageHTTPHeader.html">StorageHTTPHeader</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/TransferState.html">TransferState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/TransferType.html">TransferType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/HTTPHeaders.html">HTTPHeaders</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BlobDownloadDelegate.html">BlobDownloadDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BlobDownloader.html">BlobDownloader</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BlobUploadDelegate.html">BlobUploadDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BlobUploader.html">BlobUploader</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Transfer.html">Transfer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/TransferDelegate.html">TransferDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/BlobItem.html">BlobItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/BlobProperties.html">BlobProperties</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ContainerItem.html">ContainerItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ContainerProperties.html">ContainerProperties</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/CustomerProvidedEncryptionKey.html">CustomerProvidedEncryptionKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/DownloadBlobOptions.html">DownloadBlobOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/EncryptionOptions.html">EncryptionOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LeaseAccessConditions.html">LeaseAccessConditions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ListBlobsOptions.html">ListBlobsOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ListBlobsOptions/ListBlobsInclude.html">– ListBlobsInclude</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ListContainersOptions.html">ListContainersOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ListContainersOptions/ListContainersInclude.html">– ListContainersInclude</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LocalURL.html">LocalURL</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LocalURL/KnownDirectory.html">– KnownDirectory</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ModifiedAccessConditions.html">ModifiedAccessConditions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/RangeOptions.html">RangeOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/StorageBlobClientOptions.html">StorageBlobClientOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/StorageSASCredential.html">StorageSASCredential</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/StorageSharedKeyCredential.html">StorageSharedKeyCredential</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/TransferProgress.html">TransferProgress</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/UploadBlobOptions.html">UploadBlobOptions</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>BlobProperties</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">BlobProperties</span> <span class="p">:</span> <span class="kt">XMLModel</span><span class="p">,</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                </div>
+              </div>
+            <p>Structure containing properties of a blob or blob snapshot.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV12creationTime10Foundation4DateVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/creationTime" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV12creationTime10Foundation4DateVSgvp">creationTime</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The date that the blob was created.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">creationTime</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV12lastModified10Foundation4DateVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/lastModified" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV12lastModified10Foundation4DateVSgvp">lastModified</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The date that the blob was last modified.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">lastModified</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV4eTagSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/eTag" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV4eTagSSSgvp">eTag</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The entity tag for the blob.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">eTag</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV13contentLengthSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/contentLength" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV13contentLengthSiSgvp">contentLength</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The size of the blob in bytes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">contentLength</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV11contentTypeSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/contentType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV11contentTypeSSSgvp">contentType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The content type specified for the blob.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">contentType</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV18contentDispositionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/contentDisposition" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV18contentDispositionSSSgvp">contentDisposition</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The value of the blob&rsquo;s Content-Disposition request header, if previously set.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">contentDisposition</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV15contentEncodingSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/contentEncoding" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV15contentEncodingSSSgvp">contentEncoding</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The value of the blob&rsquo;s Content-Encoding request header, if previously set.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">contentEncoding</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV15contentLanguageSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/contentLanguage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV15contentLanguageSSSgvp">contentLanguage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The value of the blob&rsquo;s Content-Language request header, if previously set.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">contentLanguage</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV10contentMD5SSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/contentMD5" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV10contentMD5SSSgvp">contentMD5</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The value of the blob&rsquo;s Content-MD5 request header, if previously set.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">contentMD5</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV12contentCRC64SSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/contentCRC64" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV12contentCRC64SSSgvp">contentCRC64</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The value of the blob&rsquo;s x-ms-content-crc64 request header, if previously set.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">contentCRC64</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV12cacheControlSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/cacheControl" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV12cacheControlSSSgvp">cacheControl</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The value of the blob&rsquo;s Cache-Control request header, if previously set.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">cacheControl</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV14sequenceNumberSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/sequenceNumber" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV14sequenceNumberSiSgvp">sequenceNumber</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The current sequence number for a page blob. This value is nil for block or append blobs.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">sequenceNumber</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV8blobTypeAA0cF0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/blobType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV8blobTypeAA0cF0OSgvp">blobType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The type of the blob.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">blobType</span><span class="p">:</span> <span class="kt"><a href="../Enums/BlobType.html">BlobType</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV10accessTierAA06AccessF0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/accessTier" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV10accessTierAA06AccessF0OSgvp">accessTier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The access tier of the blob.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">accessTier</span><span class="p">:</span> <span class="kt"><a href="../Enums/AccessTier.html">AccessTier</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV11leaseStatusAA05LeaseF0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/leaseStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV11leaseStatusAA05LeaseF0OSgvp">leaseStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The lease status of the blob.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">leaseStatus</span><span class="p">:</span> <span class="kt"><a href="../Enums/LeaseStatus.html">LeaseStatus</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV10leaseStateAA05LeaseF0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/leaseState" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV10leaseStateAA05LeaseF0OSgvp">leaseState</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The lease state of the blob.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">leaseState</span><span class="p">:</span> <span class="kt"><a href="../Enums/LeaseState.html">LeaseState</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV13leaseDurationAA05LeaseF0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/leaseDuration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV13leaseDurationAA05LeaseF0OSgvp">leaseDuration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies whether the lease on a blob is of infinite or fixed duration.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">leaseDuration</span><span class="p">:</span> <span class="kt"><a href="../Enums/LeaseDuration.html">LeaseDuration</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV6copyIdSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/copyId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV6copyIdSSSgvp">copyId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>String identifier for the last attempted Copy Blob operation where this blob was the destination blob.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">copyId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV10copyStatusAA04CopyF0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/copyStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV10copyStatusAA04CopyF0OSgvp">copyStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Status of the copy operation identified by <code><a href="../Structs/BlobProperties.html#/s:16AzureStorageBlob0C10PropertiesV6copyIdSSSgvp">copyId</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">copyStatus</span><span class="p">:</span> <span class="kt"><a href="../Enums/CopyStatus.html">CopyStatus</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV10copySource10Foundation3URLVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/copySource" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV10copySource10Foundation3URLVSgvp">copySource</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The URL of the source blob used in the copy operation identified by <code><a href="../Structs/BlobProperties.html#/s:16AzureStorageBlob0C10PropertiesV6copyIdSSSgvp">copyId</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">copySource</span><span class="p">:</span> <span class="kt">URL</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV12copyProgressSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/copyProgress" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV12copyProgressSSSgvp">copyProgress</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Contains the number of bytes copied and the total bytes in the source blob, for the copy operation identified by
+<code><a href="../Structs/BlobProperties.html#/s:16AzureStorageBlob0C10PropertiesV6copyIdSSSgvp">copyId</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">copyProgress</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV18copyCompletionTime10Foundation4DateVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/copyCompletionTime" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV18copyCompletionTime10Foundation4DateVSgvp">copyCompletionTime</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Completion time of the copy operation identified by <code><a href="../Structs/BlobProperties.html#/s:16AzureStorageBlob0C10PropertiesV6copyIdSSSgvp">copyId</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">copyCompletionTime</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV21copyStatusDescriptionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/copyStatusDescription" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV21copyStatusDescriptionSSSgvp">copyStatusDescription</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Describes the cause of a fatal or non-fatal copy operation failure encounted in the copy operation identified by
+<code><a href="../Structs/BlobProperties.html#/s:16AzureStorageBlob0C10PropertiesV6copyIdSSSgvp">copyId</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">copyStatusDescription</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV15serverEncryptedSbSgvp"></a>
+                    <a name="//apple_ref/swift/Property/serverEncrypted" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV15serverEncryptedSbSgvp">serverEncrypted</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates whether the blob data and application metadata are completely encrypted.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">serverEncrypted</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV15incrementalCopySbSgvp"></a>
+                    <a name="//apple_ref/swift/Property/incrementalCopy" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV15incrementalCopySbSgvp">incrementalCopy</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates whether the blob is an incremental copy blob.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">incrementalCopy</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV18accessTierInferredSbSgvp"></a>
+                    <a name="//apple_ref/swift/Property/accessTierInferred" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV18accessTierInferredSbSgvp">accessTierInferred</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If the access tier is not explicitly set on the blob, indicates whether the access tier is inferred based on the
+blob&rsquo;s content length.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">accessTierInferred</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV20accessTierChangeTime10Foundation4DateVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/accessTierChangeTime" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV20accessTierChangeTime10Foundation4DateVSgvp">accessTierChangeTime</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The date that the access tier was last changed on the blob.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">accessTierChangeTime</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV11deletedTime10Foundation4DateVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/deletedTime" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV11deletedTime10Foundation4DateVSgvp">deletedTime</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The date that the blob was soft-deleted.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">deletedTime</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV22remainingRetentionDaysSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/remainingRetentionDays" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV22remainingRetentionDaysSiSgvp">remainingRetentionDays</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The number of days remaining in the blob&rsquo;s time-based retention policy.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">remainingRetentionDays</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0C10PropertiesV11contentType0E11Disposition0E8Encoding0E8Language0E3MD50E5CRC6412cacheControl10accessTierACSSSg_A6lA06AccessO0OSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(contentType:contentDisposition:contentEncoding:contentLanguage:contentMD5:contentCRC64:cacheControl:accessTier:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0C10PropertiesV11contentType0E11Disposition0E8Encoding0E8Language0E3MD50E5CRC6412cacheControl10accessTierACSSSg_A6lA06AccessO0OSgtcfc">init(contentType:contentDisposition:contentEncoding:contentLanguage:contentMD5:contentCRC64:cacheControl:accessTier:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize a <code>BlobProperties</code> structure.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="nv">contentType</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">contentDisposition</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">contentEncoding</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">contentLanguage</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">contentMD5</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">contentCRC64</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">cacheControl</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">accessTier</span><span class="p">:</span> <span class="kt"><a href="../Enums/AccessTier.html">AccessTier</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contentType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The content type specified for the blob.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contentDisposition</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The value of the blob&rsquo;s Content-Disposition request header.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contentEncoding</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The value of the blob&rsquo;s Content-Encoding request header.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contentLanguage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The value of the blob&rsquo;s Content-Language request header.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contentMD5</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The value of the blob&rsquo;s Content-MD5 request header.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contentCRC64</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The value of the blob&rsquo;s x-ms-content-crc64 request header.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cacheControl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The value of the blob&rsquo;s Cache-Control request header.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>accessTier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The access tier of the blob.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2020 <a class="link" href="https://azure.github.io/azure-sdk/" target="_blank" rel="external">Microsoft</a>. All rights reserved. (Last updated: 2020-04-24)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

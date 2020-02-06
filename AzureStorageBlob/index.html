@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AzureStorageBlob  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+
+    <a title="AzureStorageBlob  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          AzureStorageBlob 0.1 Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/Azure/azure-sdk-for-ios">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">AzureStorageBlob Reference</a>
+      <img class="carat" src="img/carat.png" />
+      AzureStorageBlob  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BlobTransfer.html">BlobTransfer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/StorageBlobClient.html">StorageBlobClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/StorageBlobClient/ApiVersion.html">– ApiVersion</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/AccessTier.html">AccessTier</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/BlobType.html">BlobType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/CopyStatus.html">CopyStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/LeaseDuration.html">LeaseDuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/LeaseState.html">LeaseState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/LeaseStatus.html">LeaseStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/StorageHTTPHeader.html">StorageHTTPHeader</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/TransferState.html">TransferState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/TransferType.html">TransferType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/HTTPHeaders.html">HTTPHeaders</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/BlobDownloadDelegate.html">BlobDownloadDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/BlobDownloader.html">BlobDownloader</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/BlobUploadDelegate.html">BlobUploadDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/BlobUploader.html">BlobUploader</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/Transfer.html">Transfer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/TransferDelegate.html">TransferDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/BlobItem.html">BlobItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/BlobProperties.html">BlobProperties</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/ContainerItem.html">ContainerItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/ContainerProperties.html">ContainerProperties</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/CustomerProvidedEncryptionKey.html">CustomerProvidedEncryptionKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/DownloadBlobOptions.html">DownloadBlobOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/EncryptionOptions.html">EncryptionOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/LeaseAccessConditions.html">LeaseAccessConditions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/ListBlobsOptions.html">ListBlobsOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/ListBlobsOptions/ListBlobsInclude.html">– ListBlobsInclude</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/ListContainersOptions.html">ListContainersOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/ListContainersOptions/ListContainersInclude.html">– ListContainersInclude</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/LocalURL.html">LocalURL</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/LocalURL/KnownDirectory.html">– KnownDirectory</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/ModifiedAccessConditions.html">ModifiedAccessConditions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/RangeOptions.html">RangeOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/StorageBlobClientOptions.html">StorageBlobClientOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/StorageSASCredential.html">StorageSASCredential</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/StorageSharedKeyCredential.html">StorageSharedKeyCredential</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/TransferProgress.html">TransferProgress</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/UploadBlobOptions.html">UploadBlobOptions</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            
+            <h1 id='azure-storage-blobs-client-library-for-ios' class='heading'>Azure Storage Blobs client library for iOS</h1>
+
+<p>Azure Blob storage is Microsoft&rsquo;s object storage solution for the cloud. Blob storage is optimized for storing massive amounts of unstructured data, such as text or binary data.</p>
+
+<p>Blob storage is ideal for:</p>
+
+<ul>
+<li>Serving images or documents directly to a browser</li>
+<li>Storing files for distributed access</li>
+<li>Streaming video and audio</li>
+<li>Storing data for backup and restore, disaster recovery, and archiving</li>
+<li>Storing data for analysis by an on-premises or Azure-hosted service</li>
+</ul>
+
+<p><a href="https://github.com/Azure/azure-sdk-for-ios/tree/master/sdk/storage/AzureStorageBlob">Source code</a> | <a href="...">API reference documentation</a> | <a href="https://docs.microsoft.com/azure/storage/">Product documentation</a> | <a href="https://github.com/Azure/azure-sdk-for-ios/tree/master/examples/AzureSDKDemoSwift">Samples</a></p>
+<h2 id='getting-started' class='heading'>Getting started</h2>
+
+<p>The basic outline of tasks needed to use the client library is as follows:</p>
+
+<ol>
+<li>Ensure you&rsquo;ve met the <a href="#prerequisites">prerequisites</a>.</li>
+<li><a href="#install-the-library">Install the library</a> into your project.</li>
+<li>Create an instance of the <a href="#create-the-client">client</a>.</li>
+<li>If you&rsquo;ll be uploading or downloading blobs, start the <a href="#managed-transfers">management engine</a>.</li>
+<li>Call the appropriate <a href="#examples">client methods</a> to list containers, and list, download, and upload blobs.</li>
+</ol>
+<h3 id='prerequisites' class='heading'>Prerequisites</h3>
+
+<ul>
+<li>The client library is written in modern Swift 5. Due to this, Xcode 10.2 or higher is required to use this library.</li>
+<li>You must have an <a href="https://azure.microsoft.com/free/">Azure subscription</a> and an
+<a href="https://docs.microsoft.com/azure/storage/common/storage-account-overview">Azure storage account</a> to use this library.</li>
+</ul>
+<h4 id='create-a-storage-account' class='heading'>Create a storage account</h4>
+
+<p>If you wish to create a new storage account, you can use the
+<a href="https://docs.microsoft.com/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal">Azure Portal</a>,
+<a href="https://docs.microsoft.com/azure/storage/common/storage-quickstart-create-account?tabs=azure-powershell">Azure PowerShell</a>,
+or <a href="https://docs.microsoft.com/azure/storage/common/storage-quickstart-create-account?tabs=azure-cli">Azure CLI</a>:</p>
+<pre class="highlight shell"><code><span class="c"># Create a new resource group to hold the storage account -</span>
+<span class="c"># if using an existing resource group, skip this step</span>
+az group create <span class="nt">--name</span> my-resource-group <span class="nt">--location</span> westus2
+
+<span class="c"># Create the storage account</span>
+az storage account create <span class="nt">-n</span> my-storage-account-name <span class="nt">-g</span> my-resource-group
+</code></pre>
+<h3 id='install-the-library' class='heading'>Install the library</h3>
+
+<p>At the present time, to install the Azure Storage Blobs client library for iOS you must download the latest
+<a href="https://github.com/Azure/azure-sdk-for-ios/releases">release</a> and integrate it into your project manually:</p>
+<h4 id='manually-integrate-the-library-into-your-project' class='heading'>Manually integrate the library into your project</h4>
+
+<p>To manually integrate this library into your project, first download the latest releases of the following libraries from
+the repository&rsquo;s <a href="https://github.com/Azure/azure-sdk-for-ios/releases">Releases</a> page:</p>
+
+<ul>
+<li><code>AzureCore.framework</code></li>
+<li><code>AzureStorageBlob.framework</code></li>
+</ul>
+
+<p>Extract the .frameworks to your project&rsquo;s &ldquo;Frameworks&rdquo; folder. Select your project in Xcode&rsquo;s Project navigator, and
+then select the desired target in the Targets list. Drag &amp; drop the .frameworks from your project&rsquo;s &ldquo;Frameworks&rdquo; folder
+into the &ldquo;Frameworks, Libraries, and Embedded Content&rdquo; section.</p>
+
+<blockquote>
+<p>Note: To include debug symbols for these frameworks in your project, download the corresponding <code>dSYM</code> archives,
+extract them to a location within your project directory, and add a Build Phase to your project that will copy them to
+your Products Directory when installing.</p>
+</blockquote>
+
+<p>If you plan to use the <a href="http://aka.ms/aadv2">Microsoft Authentication Library (MSAL) for iOS</a> in your project, add it by
+following the library&rsquo;s
+<a href="https://github.com/AzureAD/microsoft-authentication-library-for-objc#installation">installation instructions</a>.</p>
+<h3 id='create-the-client' class='heading'>Create the client</h3>
+
+<p>The Azure Storage Blobs client library for iOS allows you to interact with blob storage containers and blobs.
+Interaction with these resources starts with an instance of a <a href="#client">client</a>.</p>
+
+<p>To create a client object you will call the <code><a href="Classes/StorageBlobClient.html">StorageBlobClient</a></code> initializer, providing one or more of the following
+parameters:</p>
+
+<ul>
+<li>A <a href="#authenticated-clients">credential</a> that allows the client to access the storage account. You will need to provide
+a credential unless you&rsquo;re creating an <a href="#anonymous-clients">anonymous</a> client.</li>
+<li>The <a href="#looking-up-the-endpoint-url">blob storage endpoint</a> URL for the storage account. You will need to provide the
+endpoint URL if you&rsquo;re creating an <a href="#anonymous-clients">anonymous</a> client or a client that uses the
+<a href="#microsoft-authentication-library-msal-for-ios">Microsoft Authentication Library (MSAL) for iOS</a>.</li>
+<li>A <a href="#choosing-a-restoration-id">restoration ID</a> that associates the client instance with transfers that it creates. A
+restoration ID must always be provided.</li>
+<li>A <a href="#customizing-the-client">client options</a> object to customize the behavior of the client. The client options object
+is always optional.</li>
+</ul>
+<h4 id='types-of-clients' class='heading'>Types of clients</h4>
+
+<p>To interact with a storage account that permits anonymous read access, you can create an
+<a href="#anonymous-clients">anonymous client</a> that requires no credential.</p>
+
+<p>When interacting with a storage account that doesn&rsquo;t permit anonymous read access, or to perform any write operations,
+you&rsquo;ll need to create a client that is authenticated by one of the following credentials, depending on the type of
+<a href="https://docs.microsoft.com/azure/storage/common/storage-auth">authorization</a> you wish to use:</p>
+
+<ul>
+<li><a href="#shared-access-signature">Shared Access Signature</a></li>
+<li><a href="#microsoft-authentication-library-msal-for-ios">Microsoft Authentication Library (MSAL) for iOS)</a></li>
+<li><a href="#storage-account-shared-access-key">Storage account shared access key</a></li>
+</ul>
+<h5 id='anonymous-clients' class='heading'>Anonymous clients</h5>
+
+<p>You can create an anonymous client by calling the <code><a href="Classes/StorageBlobClient.html">StorageBlobClient</a></code> initializer without providing a credential,
+passing only the <a href="#looking-up-the-endpoint-url">blob storage endpoint</a> for the storage account you wish to connect to
+and a <a href="#choosing-a-restoration-id">restoration ID</a>. Anonymous clients can perform read-only operations on storage
+accounts that permit anonymous read access:</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">AzureStorageBlob</span>
+
+<span class="k">let</span> <span class="nv">endpointUrl</span> <span class="o">=</span> <span class="kt">StorageBlobClient</span><span class="o">.</span><span class="nf">endpoint</span><span class="p">(</span><span class="nv">forAccount</span><span class="p">:</span> <span class="s">"&lt;my-storage-account-name&gt;"</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">client</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">StorageBlobClient</span><span class="p">(</span><span class="nv">endpoint</span><span class="p">:</span> <span class="n">endpointUrl</span><span class="p">,</span> <span class="nv">withRestorationId</span><span class="p">:</span> <span class="s">"MyAppClient"</span><span class="p">)</span>
+</code></pre>
+<h5 id='shared-access-signature' class='heading'>Shared Access Signature</h5>
+
+<p>To use a <a href="https://docs.microsoft.com/azure/storage/common/storage-sas-overview">shared access signature (SAS) token</a>,
+you&rsquo;ll create a <code><a href="Structs/StorageSASCredential.html">StorageSASCredential</a></code> providing the token as a string. SAS tokens can scoped to provide access to an
+entire storage account, a single blob container, or even an individual blob, and contain an explicit grant of
+permissions and validity period.</p>
+
+<p>You can generate a SAS token from the Azure Portal under &ldquo;Settings&rdquo; &gt; &ldquo;Shared access
+signature&rdquo; (account-scoped) or by right-clicking a blob within a container and selecting &ldquo;Generate SAS&rdquo; (blob-scoped).
+You can also generate account-, container-, and blob-scoped SAS tokens using Azure Storage Explorer by right-clicking
+the desired resource and selecting &ldquo;Get Shared Access Signature&hellip;&rdquo;, or using the Azure CLI
+(<a href="https://docs.microsoft.com/en-us/cli/azure/storage/account?view=azure-cli-latest#az-storage-account-generate-sas">account</a>,
+<a href="https://docs.microsoft.com/en-us/cli/azure/storage/container?view=azure-cli-latest#az-storage-container-generate-sas">container</a>,
+<a href="https://docs.microsoft.com/en-us/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-generate-sas">blob</a>).</p>
+
+<p>To initialize a client instance with an account-scoped SAS token, create an instance of <code><a href="Structs/StorageSASCredential.html">StorageSASCredential</a></code> with the
+Shared Access Signature Connection String, and provide that credential and a
+<a href="#choosing-a-restoration-id">restoration ID</a> when initializing your <code><a href="Classes/StorageBlobClient.html">StorageBlobClient</a></code>:</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">AzureStorageBlob</span>
+
+<span class="k">let</span> <span class="nv">sasConnectionString</span> <span class="o">=</span> <span class="s">"SharedAccessSignature=xxxx;BlobEndpoint=https://xxxx.blob.core.windows.net/;"</span>
+<span class="k">let</span> <span class="nv">sasCredential</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">StorageSASCredential</span><span class="p">(</span><span class="nv">connectionString</span><span class="p">:</span> <span class="n">sasConnectionString</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">client</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">StorageBlobClient</span><span class="p">(</span><span class="nv">credential</span><span class="p">:</span> <span class="n">sasCredential</span><span class="p">,</span> <span class="nv">withRestorationId</span><span class="p">:</span> <span class="s">"MyAppClient"</span><span class="p">)</span>
+</code></pre>
+
+<p>When you create a Shared Access Signature that is scoped to a storage container or blob, it will be generated as a
+Shared Access Signature URI, rather than a connection string. To initialize a client instance with a container- or
+blob-scoped SAS token, create an instance of <code><a href="Structs/StorageSASCredential.html">StorageSASCredential</a></code> with the Shared Access Signature URI, and provide
+that credential and a <a href="#choosing-a-restoration-id">restoration ID</a> when initializing your <code><a href="Classes/StorageBlobClient.html">StorageBlobClient</a></code>:</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">AzureStorageBlob</span>
+
+<span class="k">let</span> <span class="nv">sasUri</span> <span class="o">=</span> <span class="s">"https://xxxx.blob.core.windows.net/container/path/to/blob?xxxx"</span>
+<span class="k">let</span> <span class="nv">sasCredential</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">StorageSASCredential</span><span class="p">(</span><span class="nv">blobSasUri</span><span class="p">:</span> <span class="n">sasUri</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">client</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">StorageBlobClient</span><span class="p">(</span><span class="nv">credential</span><span class="p">:</span> <span class="n">sasCredential</span><span class="p">,</span> <span class="nv">withRestorationId</span><span class="p">:</span> <span class="s">"MyAppClient"</span><span class="p">)</span>
+</code></pre>
+<h5 id='microsoft-authentication-library-msal-for-ios' class='heading'>Microsoft Authentication Library (MSAL) for iOS</h5>
+
+<p>To use the
+<a href="https://github.com/AzureAD/microsoft-authentication-library-for-objc">Microsoft Authentication Library (MSAL) for iOS</a>
+to authenticate your client, you&rsquo;ll need to provide your AAD tenant ID and your application&rsquo;s client ID, and you&rsquo;ll need
+to use the MSAL for iOS library to authenticate the user and obtain instances of <code>MSALPublicClientApplication</code> and
+<code>MSALAccount</code>. Refer to the
+<a href="https://github.com/Azure/azure-sdk-for-ios/tree/master/examples/AzureSDKDemoSwift">AzureSDKSwiftDemo</a>
+sample for an example of how to use the MSAL for iOS library to authenticate a <code><a href="Classes/StorageBlobClient.html">StorageBlobClient</a></code>.</p>
+
+<p>To initialize a client instance with an MSAL credential, create an instance of <code>MSALCredential</code> using your AAD tenant
+ID, client ID, MSAL application object, and MSAL account object. Provide that credential, your account&rsquo;s blob storage
+endpoint URL, and a <a href="#choosing-a-restoration-id">restoration ID</a> when initializing your <code><a href="Classes/StorageBlobClient.html">StorageBlobClient</a></code>:</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">AzureCore</span>
+<span class="kd">import</span> <span class="kt">AzureStorageBlob</span>
+<span class="kd">import</span> <span class="kt">MSAL</span>
+
+<span class="c1">// Refer to the MSAL for iOS library documentation for information on how to</span>
+<span class="c1">// initialize these values in your application</span>
+<span class="k">let</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">MSALPublicClientApplication</span><span class="p">?</span> <span class="o">=</span> <span class="o">...</span>
+<span class="k">let</span> <span class="nv">account</span><span class="p">:</span> <span class="kt">MSALAccount</span><span class="p">?</span> <span class="o">=</span> <span class="o">...</span>
+
+<span class="k">let</span> <span class="nv">endpointUrl</span> <span class="o">=</span> <span class="kt">StorageBlobClient</span><span class="o">.</span><span class="nf">endpoint</span><span class="p">(</span><span class="nv">forAccount</span><span class="p">:</span> <span class="s">"&lt;my-storage-account-name&gt;"</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">msalCredential</span> <span class="o">=</span> <span class="kt">MSALCredential</span><span class="p">(</span>
+    <span class="nv">tenant</span><span class="p">:</span> <span class="s">"00112233-4455-6677-8899-aabbccddeeff"</span><span class="p">,</span>
+    <span class="nv">clientId</span><span class="p">:</span> <span class="s">"00112233-4455-6677-8899-aabbccddeeff"</span><span class="p">,</span>
+    <span class="nv">application</span><span class="p">:</span> <span class="n">msalApplication</span><span class="p">,</span>
+    <span class="nv">account</span><span class="p">:</span> <span class="n">msalAccount</span>
+<span class="p">)</span>
+<span class="k">let</span> <span class="nv">client</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">StorageBlobClient</span><span class="p">(</span><span class="nv">endpoint</span><span class="p">:</span> <span class="n">endpointUrl</span><span class="p">,</span> <span class="nv">credential</span><span class="p">:</span> <span class="n">msalCredential</span><span class="p">,</span> <span class="nv">withRestorationId</span><span class="p">:</span> <span class="s">"MyAppClient"</span><span class="p">)</span>
+</code></pre>
+<h5 id='storage-account-shared-access-key' class='heading'>Storage account shared access key</h5>
+
+<p>To use a <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/authorize-with-shared-key">shared access key</a>,
+you&rsquo;ll create a <code><a href="Structs/StorageSharedKeyCredential.html">StorageSharedKeyCredential</a></code> using the storage account connection string, or a combination of the
+account name and access key. You can find the connection string and access keys for your storage account in the Azure
+Portal under &ldquo;Settings&rdquo; &gt; &ldquo;Access keys&rdquo;, in Azure Storage Explorer located in the storage account&rsquo;s &ldquo;Properties&rdquo; pane,
+or using the Azure CLI
+(<a href="https://docs.microsoft.com/en-us/cli/azure/storage/account?view=azure-cli-latest#az-storage-account-show-connection-string">connection string</a>,
+<a href="https://docs.microsoft.com/en-us/cli/azure/storage/account/keys?view=azure-cli-latest#az-storage-account-keys-list">access keys</a>).</p>
+
+<blockquote>
+<p><strong>WARNING</strong>: Shared keys are inherently insecure in end-user facing applications such as mobile and desktop apps.
+Shared keys provide full access to an entire storage account and should not be shared with end users. Since mobile and
+desktop applications are inherently end-user facing, it&rsquo;s highly recommended that <code><a href="Structs/StorageSharedKeyCredential.html">StorageSharedKeyCredential</a></code> not be
+used in production for such applications.</p>
+</blockquote>
+
+<p>To initialize a client instance with a storage account connection string, create an instance of
+<code><a href="Structs/StorageSharedKeyCredential.html">StorageSharedKeyCredential</a></code> with the connection string, and provide that credential and a
+<a href="#choosing-a-restoration-id">restoration ID</a> when initializing your <code><a href="Classes/StorageBlobClient.html">StorageBlobClient</a></code>:</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">AzureStorageBlob</span>
+
+<span class="k">let</span> <span class="nv">connectionString</span> <span class="o">=</span> <span class="s">"DefaultEndpointsProtocol=https;AccountName=xxxx;AccountKey=xxxx;EndpointSuffix=core.windows.net"</span>
+<span class="k">let</span> <span class="nv">sharedKeyCredential</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">StorageSharedKeyCredential</span><span class="p">(</span><span class="nv">connectionString</span><span class="p">:</span> <span class="n">sasConnectionString</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">client</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">StorageBlobClient</span><span class="p">(</span><span class="nv">credential</span><span class="p">:</span> <span class="n">sharedKeyCredential</span><span class="p">,</span> <span class="nv">withRestorationId</span><span class="p">:</span> <span class="s">"MyAppClient"</span><span class="p">)</span>
+</code></pre>
+
+<p>To initialize a client instance with a storage account name and access key, create an instance of
+<code><a href="Structs/StorageSharedKeyCredential.html">StorageSharedKeyCredential</a></code> with the account name and access key, and provide that credential and a
+<a href="#choosing-a-restoration-id">restoration ID</a> when initializing your <code><a href="Classes/StorageBlobClient.html">StorageBlobClient</a></code>:</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">AzureStorageBlob</span>
+
+<span class="k">let</span> <span class="nv">accountName</span> <span class="o">=</span> <span class="s">"&lt;my-storage-account-name&gt;"</span>
+<span class="k">let</span> <span class="nv">accessKey</span> <span class="o">=</span> <span class="s">"xxxx"</span>
+<span class="k">let</span> <span class="nv">sharedKeyCredential</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">StorageSharedKeyCredential</span><span class="p">(</span><span class="nv">accountName</span><span class="p">:</span> <span class="n">accountName</span><span class="p">,</span> <span class="nv">accessKey</span><span class="p">:</span> <span class="n">accessKey</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">client</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">StorageBlobClient</span><span class="p">(</span><span class="nv">credential</span><span class="p">:</span> <span class="n">sharedKeyCredential</span><span class="p">,</span> <span class="nv">withRestorationId</span><span class="p">:</span> <span class="s">"MyAppClient"</span><span class="p">)</span>
+</code></pre>
+
+<p>The <code>StorageSharedKeyCredential(accountName:accountKey:)</code> initializer accepts additional parameters if you need to
+construct a shared access key credential that uses a different endpoint suffix or protocol, but most users should be
+able to omit these parameters and use the defaults provided.</p>
+<h4 id='looking-up-the-endpoint-url' class='heading'>Looking up the endpoint URL</h4>
+
+<p>If you&rsquo;re creating an <a href="#anonymous-clients">anonymous client</a> or a client that uses the
+<a href="#microsoft-authentication-library-msal-for-ios">Microsoft Authentication Library (MSAL) for iOS</a>, you&rsquo;ll need to
+provide the storage account&rsquo;s blob storage endpoint URL. You can find the blob storage endpoint URL using the
+<a href="https://docs.microsoft.com/azure/storage/common/storage-account-overview#storage-account-endpoints">Azure Portal</a>,
+<a href="https://docs.microsoft.com/powershell/module/az.storage/get-azstorageaccount">Azure PowerShell</a>,
+or <a href="https://docs.microsoft.com/cli/azure/storage/account?view=azure-cli-latest#az-storage-account-show">Azure CLI</a>:</p>
+<pre class="highlight shell"><code><span class="c"># Get the blob service account url for the storage account</span>
+az storage account show <span class="nt">-n</span> my-storage-account-name <span class="nt">-g</span> my-resource-group <span class="nt">--query</span> <span class="s2">"primaryEndpoints.blob"</span>
+</code></pre>
+
+<p>You can also easily create a blob storage endpoint URL from a given storage account name by using the static
+<code>StorageBlobClient.endpoint(forAccount:)</code> method:</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">AzureStorageBlob</span>
+
+<span class="k">let</span> <span class="nv">endpointUrl</span> <span class="o">=</span> <span class="kt">StorageBlobClient</span><span class="o">.</span><span class="nf">endpoint</span><span class="p">(</span><span class="nv">forAccount</span><span class="p">:</span> <span class="s">"&lt;my-storage-account-name&gt;"</span><span class="p">)</span>
+</code></pre>
+
+<p>The <code>endpoint(forAccount:)</code> method accepts additional parameters if you need to construct a blob storage endpoint URL
+that uses a different endpoint suffix or protocol, but most users should be able to omit these parameters and use the
+defaults provided.</p>
+<h4 id='choosing-a-restoration-id' class='heading'>Choosing a Restoration ID</h4>
+
+<p>When creating a client, you must provide a restoration ID. The restoration ID is a string identifier used to associate a
+client instance with transfers it creates. To understand why the restoration ID is required, it is necessary to consider
+how the client executes a blob upload or download.</p>
+
+<p>When you call the client&rsquo;s <a href="#downloading-a-blob">upload</a> or <a href="#downloading-a-blob">download</a> methods, the client will
+create and enqueue the transfer within its <a href="#managed-transfers">transfer management engine</a>, returning a <code><a href="Protocols/Transfer.html">Transfer</a></code>
+object. When your application exits with uncompleted transfers in the queue, the transfer management engine will
+serialize them to disk and restore them the next time your application launches and starts the management engine.
+However, because your application could contain multiple client instances with different credentials and configurations,
+it&rsquo;s necessary to provide each client with a restoration ID so that when transfers are restored, they can be
+re-associated with the correct client instance.</p>
+
+<p>If your application only ever creates a single client, it&rsquo;s sufficient to simply choose a value unique to your
+application (e.g. &ldquo;MyApplication&rdquo;) as your restoration ID. Using a value unique to your application will ensure that the
+transfer management engine can correctly re-associate transfers even if your application happens to include a
+third-party dependency that also uses the AzureStorageBlob library. If your application creates multiple clients with
+different configurations, use a value unique to both your application and the configuration (e.g.
+&ldquo;MyApplication.photosClient&rdquo; or &ldquo;MyApplication.backupClient&rdquo;). Each client instance in your application needs to use a
+unique restoration ID. If you attempt to create more than one client with the same restoration ID, an error will be
+thrown.</p>
+<h4 id='customizing-the-client' class='heading'>Customizing the client</h4>
+
+<p>When creating a client, you may choose to provide an optional
+<a href="https://github.com/Azure/azure-sdk-for-ios/blob/master/sdk/storage/AzureStorageBlob/Source/DataStructures/StorageBlobClientOptions.swift">StorageBlobClientOptions</a>
+object in order to configure the client as desired. You may instruct the client to use a specific API version of the
+Azure Storage Blob service, change when and how log messages are emitted from the client, and control the chunk size
+used when uploading and downloading blobs - the maximum size of each piece when the client breaks an upload or download
+operation into multiple pieces.</p>
+<h3 id='managed-transfers' class='heading'>Managed transfers</h3>
+
+<p>When you use a client&rsquo;s <a href="#downloading-a-blob">upload</a> or <a href="#downloading-a-blob">download</a> methods to transfer a blob to
+or from the device, the client will perform the operation as a <em>managed transfer</em>. During a managed transfer, the
+library&rsquo;s transfer management engine will ensure that the transfer is performed reliably in the face of changing network
+conditions, pausing transfers when network connectivity is lost and resuming them when connectivity is restored. Managed
+transfers can also be paused, resumed, or canceled by the developer at any time. Any managed transfers which have not
+been completed when the hosting application terminates are persisted to disk and can be restarted on a subsequent
+application launch.</p>
+<h4 id='starting-managed-transfers' class='heading'>Starting managed transfers</h4>
+
+<p>When your application first launches, the library&rsquo;s transfer management engine is stopped. Calling <code>download</code> or
+<code>upload</code> from a client will queue those transfers, but they won&rsquo;t begin until the management engine is started by
+calling the <code><a href="Classes/StorageBlobClient.html#/s:16AzureStorageBlob0bC6ClientC13startManagingyyFZ">StorageBlobClient.startManaging()</a></code> method. When you start the transfer management engine, the state of
+transfers is loaded from disk, the management engine begins listening for network connectivity events, and any
+incomplete transfers are resumed.</p>
+
+<p>It&rsquo;s recommended to call the <code>startManaging()</code> method from a background thread, at an opportune time after your app has
+started. In many applications, calling this method in the <code>AppDelegate</code> or from within a <code>ViewController</code>&lsquo;s lifecycle
+methods is sufficient. However, depending on the type of credential used to authenticate the client, resuming a transfer
+could cause a login UI to be displayed if the access token for the transfer has expired. If you&rsquo;re using such a
+credential (e.g. <code>MSALCredential</code>) you should instead first inspect the list of transfers to determine if any are
+pending. If so, you should assume that calling <code>startManaging()</code> method may display a login UI, and call it in a
+user-appropriate context (e.g. display a &ldquo;pending transfers&rdquo; message and wait for explicit user confirmation to start
+the management engine).</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">AzureStorageBlob</span>
+<span class="kd">import</span> <span class="kt">UIKit</span>
+
+<span class="kd">class</span> <span class="kt">MyViewController</span><span class="p">:</span> <span class="kt">UIViewController</span> <span class="p">{</span>
+    <span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">super</span><span class="o">.</span><span class="nf">viewDidLoad</span><span class="p">()</span>
+        <span class="kt">StorageBlobClient</span><span class="o">.</span><span class="nf">startManaging</span><span class="p">()</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>As transfers progress, the client will periodically snapshot their state to disk. However, to ensure that all progress
+is saved and resources are released when your app shuts down or when your <code>ViewController</code> goes away, the
+<code><a href="Classes/StorageBlobClient.html#/s:16AzureStorageBlob0bC6ClientC12stopManagingyyFZ">StorageBlobClient.stopManaging()</a></code> method exists to safely stop the transfer management engine. When you stop the
+transfer management engine, any incomplete transfers are paused, the management engine stops listening for network
+connectivity events, and the state of transfers is stored to disk. Most applications should call this method in the
+<code>AppDelegate</code> or from within a <code>ViewController</code>&rsquo;s lifecycle methods.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">AzureStorageBlob</span>
+<span class="kd">import</span> <span class="kt">UIKit</span>
+
+<span class="kd">@UIApplicationMain</span>
+<span class="kd">class</span> <span class="kt">AppDelegate</span><span class="p">:</span> <span class="kt">UIResponder</span><span class="p">,</span> <span class="kt">UIApplicationDelegate</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">applicationWillTerminate</span><span class="p">(</span><span class="nv">_</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">StorageBlobClient</span><span class="o">.</span><span class="nf">stopManaging</span><span class="p">()</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h4 id='tracking-progress-of-managed-transfers' class='heading'>Tracking progress of managed transfers</h4>
+
+<p>Managed transfers emit events as they are executed by the transfer management engine. You can use these events to
+understand when transfers start, make progress, and complete or fail. The transfer management engine routes relevant
+events through to the client instance that initiated the transfer. To be informed about events from transfers created by
+your client, attach a <code><a href="Protocols/TransferDelegate.html">TransferDelegate</a></code> to it.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">AzureStorageBlob</span>
+<span class="kd">import</span> <span class="kt">UIKit</span>
+
+<span class="kd">class</span> <span class="kt">MyViewController</span><span class="p">:</span> <span class="kt">UIViewController</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="k">var</span> <span class="nv">client</span><span class="p">:</span> <span class="kt">StorageBlobClient</span>
+
+    <span class="o">...</span>
+
+    <span class="n">client</span><span class="o">.</span><span class="n">transferDelegate</span> <span class="o">=</span> <span class="k">self</span>
+<span class="p">}</span>
+
+<span class="kd">extension</span> <span class="kt">MyViewController</span><span class="p">:</span> <span class="kt">TransferDelegate</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">func</span> <span class="nf">transfer</span><span class="p">(</span><span class="n">_</span> <span class="nv">transfer</span><span class="p">:</span> <span class="kt">Transfer</span><span class="p">,</span> <span class="n">didUpdateWithState</span> <span class="nv">state</span><span class="p">:</span> <span class="kt">TransferState</span><span class="p">,</span> <span class="n">andProgress</span> <span class="nv">progress</span><span class="p">:</span> <span class="kt">Float</span><span class="p">?)</span> <span class="p">{</span>
+        <span class="o">...</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">func</span> <span class="nf">transfersDidUpdate</span><span class="p">(</span><span class="n">_</span> <span class="nv">transfers</span><span class="p">:</span> <span class="p">[</span><span class="kt">Transfer</span><span class="p">])</span> <span class="p">{</span>
+        <span class="o">...</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">func</span> <span class="nf">transfer</span><span class="p">(</span><span class="n">_</span> <span class="nv">transfer</span><span class="p">:</span> <span class="kt">Transfer</span><span class="p">,</span> <span class="n">didFailWithError</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span> <span class="p">{</span>
+        <span class="o">...</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">func</span> <span class="nf">transferDidComplete</span><span class="p">(</span><span class="n">_</span> <span class="nv">transfer</span><span class="p">:</span> <span class="kt">Transfer</span><span class="p">)</span> <span class="p">{</span>
+        <span class="o">...</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h4 id='parallel-execution-of-transfers' class='heading'>Parallel execution of transfers</h4>
+
+<p>The transfer management engine breaks each transfer into a sequence of chunks and transfers multiple chunks in parallel
+in order to make more efficient use of available network bandwidth. The chunk size is configurable for each client by
+specifying the desired chunk size in the <a href="#customizing-the-client">client options object</a>. The degree of parallelism is
+a global value and can also be configured by the developer:</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">AzureStorageBlob</span>
+
+<span class="c1">// Only execute one transfer at a time, effectively disabling parallelism</span>
+<span class="kt">StorageBlobClient</span><span class="o">.</span><span class="n">maxConcurrentTransfers</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c1">// Execute 4 transfers in parallel</span>
+<span class="kt">StorageBlobClient</span><span class="o">.</span><span class="n">maxConcurrentTransfers</span> <span class="o">=</span> <span class="mi">4</span>
+
+<span class="c1">// Allow the maximum number of parallel transfers to be determined dynamically based on current system conditions.</span>
+<span class="kt">StorageBlobClient</span><span class="o">.</span><span class="n">maxConcurrentTransfers</span> <span class="o">=</span> <span class="kt">StorageBlobClient</span><span class="o">.</span><span class="n">maxConcurrentTransfersDynamicValue</span>
+
+<span class="c1">// Restore the default value</span>
+<span class="kt">StorageBlobClient</span><span class="o">.</span><span class="n">maxConcurrentTransfers</span> <span class="o">=</span> <span class="kt">StorageBlobClient</span><span class="o">.</span><span class="n">maxConcurrentTransfersDefaultValue</span>
+</code></pre>
+<h2 id='key-concepts' class='heading'>Key concepts</h2>
+
+<p>The following components make up the Azure Blob Service:</p>
+
+<ul>
+<li>The storage account itself</li>
+<li>A container within the storage account</li>
+<li>A blob within a container</li>
+</ul>
+
+<p>The Azure Storage Blobs client library for iOS allows you to interact with some of these components through the <code>AzureStorageBlob</code> client.</p>
+<h3 id='client' class='heading'>Client</h3>
+
+<p>A single client is provided to interact with the various components of the Blob Service:</p>
+
+<ol>
+<li><a href="https://github.com/Azure/azure-sdk-for-ios/blob/dev/sdk/storage/AzureStorageBlob/Source/StorageBlobClient.swift">StorageBlobClient</a> -
+this client represents interaction with a specific blob container. It provides operations to upload, download and list blobs.</li>
+</ol>
+<h3 id='blob-types' class='heading'>Blob Types</h3>
+
+<p>The <code><a href="Classes/StorageBlobClient.html">StorageBlobClient</a></code> only works with block blobs:</p>
+
+<ul>
+<li><a href="https://docs.microsoft.com/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs#about-block-blobs">Block blobs</a>
+store text and binary data, up to approximately 4.75 TiB. Block blobs are made up of blocks of data that can be
+managed individually</li>
+</ul>
+<h2 id='examples' class='heading'>Examples</h2>
+
+<p>The following sections provide several code snippets covering some of the most common Storage Blob tasks, including:</p>
+
+<ul>
+<li><a href="#uploading-a-blob" title="Uploading a blob">Uploading a blob</a></li>
+<li><a href="#downloading-a-blob" title="Downloading a blob">Downloading a blob</a></li>
+<li><a href="#enumerating-blobs" title="Enumerating blobs">Enumerating blobs</a></li>
+</ul>
+
+<p>Note that a container must already be created to upload or download a blob.</p>
+<h3 id='create-a-container' class='heading'>Create a container</h3>
+
+<p>Create a container from where you can upload or download blobs.</p>
+<pre class="highlight shell"><code>az storage container create <span class="nt">--account-name</span> &lt;my_account&gt; <span class="nt">--name</span> &lt;my_container&gt;
+</code></pre>
+<h3 id='enumerating-blobs' class='heading'>Enumerating blobs</h3>
+
+<p>List the blobs asynchronously in your container:</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">AzureStorageBlob</span>
+
+<span class="k">let</span> <span class="nv">sasConnectionString</span> <span class="o">=</span> <span class="s">"SharedAccessSignature=xxxx;BlobEndpoint=https://xxxx.blob.core.windows.net/;"</span>
+<span class="k">let</span> <span class="nv">sasCredential</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">StorageSASCredential</span><span class="p">(</span><span class="nv">connectionString</span><span class="p">:</span> <span class="n">sasConnectionString</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">client</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">StorageBlobClient</span><span class="p">(</span><span class="nv">credential</span><span class="p">:</span> <span class="n">sasCredential</span><span class="p">,</span> <span class="nv">withRestorationId</span><span class="p">:</span> <span class="s">"MyAppClient"</span><span class="p">)</span>
+
+<span class="k">let</span> <span class="nv">containerName</span> <span class="o">=</span> <span class="s">"&lt;my_container&gt;"</span>
+<span class="k">let</span> <span class="nv">options</span> <span class="o">=</span> <span class="kt">ListBlobsOptions</span><span class="p">(</span><span class="nv">maxResults</span><span class="p">:</span> <span class="mi">20</span><span class="p">)</span>
+<span class="n">client</span><span class="o">.</span><span class="nf">listBlobs</span><span class="p">(</span><span class="nv">inContainer</span><span class="p">:</span> <span class="n">containerName</span><span class="p">,</span> <span class="nv">withOptions</span><span class="p">:</span> <span class="n">options</span><span class="p">)</span> <span class="p">{</span> <span class="n">result</span><span class="p">,</span> <span class="n">httpResponse</span> <span class="k">in</span>
+    <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="kd">let</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="n">paged</span><span class="p">):</span>
+        <span class="c1">// Do what you want with the paged result object</span>
+    <span class="k">case</span> <span class="kd">let</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="n">error</span><span class="p">):</span>
+        <span class="c1">// handle error</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='uploading-a-blob' class='heading'>Uploading a blob</h3>
+
+<p>Upload a blob asynchronously from the app&rsquo;s documents directory to your container:</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">AzureStorageBlob</span>
+
+<span class="k">let</span> <span class="nv">sasConnectionString</span> <span class="o">=</span> <span class="s">"SharedAccessSignature=xxxx;BlobEndpoint=https://xxxx.blob.core.windows.net/;"</span>
+<span class="k">let</span> <span class="nv">sasCredential</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">StorageSASCredential</span><span class="p">(</span><span class="nv">connectionString</span><span class="p">:</span> <span class="n">sasConnectionString</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">client</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">StorageBlobClient</span><span class="p">(</span><span class="nv">credential</span><span class="p">:</span> <span class="n">sasCredential</span><span class="p">,</span> <span class="nv">withRestorationId</span><span class="p">:</span> <span class="s">"MyAppClient"</span><span class="p">)</span>
+
+<span class="k">let</span> <span class="nv">containerName</span> <span class="o">=</span> <span class="s">"&lt;my_container&gt;"</span>
+<span class="k">let</span> <span class="nv">blobName</span> <span class="o">=</span> <span class="s">"&lt;my_blob&gt;"</span>
+<span class="k">let</span> <span class="nv">sourceUrl</span> <span class="o">=</span> <span class="kt">LocalURL</span><span class="p">(</span><span class="nv">fromDirectory</span><span class="p">:</span> <span class="o">.</span><span class="n">documentDirectory</span><span class="p">)</span><span class="o">.</span><span class="nf">appendingPathComponent</span><span class="p">(</span><span class="s">"&lt;my_jpg_file&gt;"</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">properties</span> <span class="o">=</span> <span class="kt">BlobProperties</span><span class="p">(</span>
+    <span class="nv">contentType</span><span class="p">:</span> <span class="s">"image/jpg"</span>
+<span class="p">)</span>
+<span class="k">let</span> <span class="nv">transfer</span> <span class="o">=</span> <span class="k">try</span> <span class="n">client</span><span class="o">.</span><span class="nf">upload</span><span class="p">(</span>
+    <span class="nv">file</span><span class="p">:</span> <span class="n">sourceUrl</span><span class="p">,</span>
+    <span class="nv">toContainer</span><span class="p">:</span> <span class="n">containerName</span><span class="p">,</span>
+    <span class="nv">asBlob</span><span class="p">:</span> <span class="n">blobName</span><span class="p">,</span>
+    <span class="nv">properties</span><span class="p">:</span> <span class="n">properties</span>
+<span class="p">)</span>
+</code></pre>
+<h3 id='downloading-a-blob' class='heading'>Downloading a blob</h3>
+
+<p>Download a blob asynchronously from your container to the app&rsquo;s cache directory, creating intermediate directories for
+the container and the path portion of the blob name:</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">AzureStorageBlob</span>
+
+<span class="k">let</span> <span class="nv">sasConnectionString</span> <span class="o">=</span> <span class="s">"SharedAccessSignature=xxxx;BlobEndpoint=https://xxxx.blob.core.windows.net/;"</span>
+<span class="k">let</span> <span class="nv">sasCredential</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">StorageSASCredential</span><span class="p">(</span><span class="nv">connectionString</span><span class="p">:</span> <span class="n">sasConnectionString</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">client</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">StorageBlobClient</span><span class="p">(</span><span class="nv">credential</span><span class="p">:</span> <span class="n">sasCredential</span><span class="p">,</span> <span class="nv">withRestorationId</span><span class="p">:</span> <span class="s">"MyAppClient"</span><span class="p">)</span>
+
+<span class="k">let</span> <span class="nv">containerName</span> <span class="o">=</span> <span class="s">"&lt;my_container&gt;"</span>
+<span class="k">let</span> <span class="nv">blobName</span> <span class="o">=</span> <span class="s">"&lt;my_blob&gt;"</span>
+<span class="k">let</span> <span class="nv">destinationUrl</span> <span class="o">=</span> <span class="kt">LocalURL</span><span class="p">(</span><span class="nv">inDirectory</span><span class="p">:</span> <span class="o">.</span><span class="n">cachesDirectory</span><span class="p">,</span> <span class="nv">forBlob</span><span class="p">:</span> <span class="n">blobName</span><span class="p">,</span> <span class="nv">inContainer</span><span class="p">:</span> <span class="n">containerName</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">transfer</span> <span class="o">=</span> <span class="k">try</span> <span class="n">client</span><span class="o">.</span><span class="nf">download</span><span class="p">(</span>
+    <span class="nv">blob</span><span class="p">:</span> <span class="n">blobName</span><span class="p">,</span>
+    <span class="nv">fromContainer</span><span class="p">:</span> <span class="n">containerName</span><span class="p">,</span>
+    <span class="nv">toFile</span><span class="p">:</span> <span class="n">destinationUrl</span>
+<span class="p">)</span>
+</code></pre>
+<h2 id='troubleshooting' class='heading'>Troubleshooting</h2>
+<h3 id='general' class='heading'>General</h3>
+
+<p>Storage Blob clients raise exceptions defined in
+<a href="https://github.com/Azure/azure-sdk-for-ios/blob/dev/sdk/core/AzureCore/Source/Errors.swift">Azure Core</a>.</p>
+<h3 id='logging' class='heading'>Logging</h3>
+
+<p>This library uses the
+<a href="https://github.com/Azure/azure-sdk-for-ios/blob/dev/sdk/core/AzureCore/Source/ClientLogger.swift">ClientLogger</a>
+protocol for logging. The desired style of logger can be set when initializing the client:</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">AzureCore</span>
+<span class="kd">import</span> <span class="kt">AzureStorageBlob</span>
+
+<span class="k">let</span> <span class="nv">sasConnectionString</span> <span class="o">=</span> <span class="s">"SharedAccessSignature=xxxx;BlobEndpoint=https://xxxx.blob.core.windows.net/;"</span>
+<span class="k">let</span> <span class="nv">sasCredential</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">StorageSASCredential</span><span class="p">(</span><span class="nv">connectionString</span><span class="p">:</span> <span class="n">sasConnectionString</span><span class="p">)</span>
+
+<span class="k">let</span> <span class="nv">logger</span> <span class="o">=</span> <span class="kt">NSLogger</span><span class="p">(</span><span class="nv">tag</span><span class="p">:</span> <span class="s">"MyAppClient"</span><span class="p">,</span> <span class="nv">level</span><span class="p">:</span> <span class="o">.</span><span class="n">debug</span><span class="p">)</span>
+
+<span class="k">let</span> <span class="nv">clientOptions</span> <span class="o">=</span> <span class="kt">StorageBlobClientOptions</span><span class="p">(</span><span class="nv">logger</span><span class="p">:</span> <span class="n">logger</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">client</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">StorageBlobClient</span><span class="p">(</span><span class="nv">credential</span><span class="p">:</span> <span class="n">sasCredential</span><span class="p">,</span> <span class="nv">withRestorationId</span><span class="p">:</span> <span class="s">"MyAppClient"</span><span class="p">,</span> <span class="nv">withOptions</span><span class="p">:</span> <span class="n">clientOptions</span><span class="p">)</span>
+</code></pre>
+
+<p>The following loggers are provided, but custom loggers can be created by implementing the <code>ClientLogger</code> protocol:</p>
+
+<ul>
+<li><code>NullClientLogger</code>: Suppress all logging.</li>
+<li><code>PrintLogger</code>: Log via print statements to STDOUT.</li>
+<li><code>NSLogger</code>: Uses the <code>NSLog</code> class for logging. The default prior to iOS 10.2.</li>
+<li><code>OSLogger</code>: Uses the <code>os_log</code> method for logging. The default for iOS 10.2 and above.</li>
+</ul>
+
+<p>The helper struct <code>ClientLoggers</code> contains static access to common loggers:</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">AzureCore</span>
+<span class="kd">import</span> <span class="kt">AzureStorageBlob</span>
+
+<span class="k">let</span> <span class="nv">sasConnectionString</span> <span class="o">=</span> <span class="s">"SharedAccessSignature=xxxx;BlobEndpoint=https://xxxx.blob.core.windows.net/;"</span>
+<span class="k">let</span> <span class="nv">sasCredential</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">StorageSASCredential</span><span class="p">(</span><span class="nv">connectionString</span><span class="p">:</span> <span class="n">sasConnectionString</span><span class="p">)</span>
+
+<span class="c1">// Returns an `NSLogger` for iOS version &lt; 10.2 and an `OSLogger` for 10.2 and above.</span>
+<span class="k">let</span> <span class="nv">logger</span> <span class="o">=</span> <span class="kt">ClientLoggers</span><span class="o">.</span><span class="nf">default</span><span class="p">(</span><span class="nv">tag</span><span class="p">:</span> <span class="s">"MyAppClient"</span><span class="p">)</span>
+
+<span class="k">let</span> <span class="nv">clientOptions</span> <span class="o">=</span> <span class="kt">StorageBlobClientOptions</span><span class="p">(</span><span class="nv">logger</span><span class="p">:</span> <span class="n">logger</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">client</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">StorageBlobClient</span><span class="p">(</span><span class="nv">credential</span><span class="p">:</span> <span class="n">sasCredential</span><span class="p">,</span> <span class="nv">withRestorationId</span><span class="p">:</span> <span class="s">"MyAppClient"</span><span class="p">,</span> <span class="nv">withOptions</span><span class="p">:</span> <span class="n">clientOptions</span><span class="p">)</span>
+</code></pre>
+
+<p>You can adjust the log level of a logger after creating it. Changes to the log level are immediate:</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">AzureCore</span>
+<span class="kd">import</span> <span class="kt">AzureStorageBlob</span>
+
+<span class="k">let</span> <span class="nv">sasConnectionString</span> <span class="o">=</span> <span class="s">"SharedAccessSignature=xxxx;BlobEndpoint=https://xxxx.blob.core.windows.net/;"</span>
+<span class="k">let</span> <span class="nv">sasCredential</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">StorageSASCredential</span><span class="p">(</span><span class="nv">connectionString</span><span class="p">:</span> <span class="n">sasConnectionString</span><span class="p">)</span>
+
+<span class="c1">// The default log level is `info`.</span>
+<span class="k">let</span> <span class="nv">logger</span> <span class="o">=</span> <span class="kt">ClientLoggers</span><span class="o">.</span><span class="nf">default</span><span class="p">(</span><span class="nv">tag</span><span class="p">:</span> <span class="s">"MyAppClient"</span><span class="p">)</span>
+
+<span class="k">let</span> <span class="nv">clientOptions</span> <span class="o">=</span> <span class="kt">StorageBlobClientOptions</span><span class="p">(</span><span class="nv">logger</span><span class="p">:</span> <span class="n">logger</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">client</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">StorageBlobClient</span><span class="p">(</span><span class="nv">credential</span><span class="p">:</span> <span class="n">sasCredential</span><span class="p">,</span> <span class="nv">withRestorationId</span><span class="p">:</span> <span class="s">"MyAppClient"</span><span class="p">,</span> <span class="nv">withOptions</span><span class="p">:</span> <span class="n">clientOptions</span><span class="p">)</span>
+
+<span class="c1">// The operation runs with logging at `info` level.</span>
+<span class="n">client</span><span class="o">.</span><span class="nf">listBlobs</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+
+<span class="n">logger</span><span class="o">.</span><span class="n">level</span> <span class="o">=</span> <span class="o">.</span><span class="n">debug</span>
+
+<span class="c1">// The operation runs with logging at `debug` level.</span>
+<span class="n">client</span><span class="o">.</span><span class="nf">listBlobs</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+</code></pre>
+<h2 id='next-steps' class='heading'>Next steps</h2>
+<h3 id='more-sample-code' class='heading'>More sample code</h3>
+
+<p>Get started with our <a href="https://github.com/Azure/azure-sdk-for-ios/tree/master/examples/">examples</a>.</p>
+
+<p>Storage Blobs Swift SDK samples are available to you in the SDK&rsquo;s GitHub repository. These samples provide example code for additional scenarios commonly encountered while working with Storage Blobs:</p>
+
+<ul>
+<li><a href="https://github.com/Azure/azure-sdk-for-ios/tree/master/examples/AzureSDKDemoSwift">AzureSDKSwiftDemo</a> - Example for common Storage Blob tasks:
+
+<ul>
+<li>List blobs in a container</li>
+<li>Upload blobs</li>
+<li>Download blobs</li>
+</ul></li>
+</ul>
+<h3 id='additional-documentation' class='heading'>Additional documentation</h3>
+
+<p>For more extensive documentation on Azure Blob storage, see the <a href="https://docs.microsoft.com/azure/storage/blobs/">Azure Blob storage documentation</a> on docs.microsoft.com.</p>
+<h2 id='contributing' class='heading'>Contributing</h2>
+
+<p>This project welcomes contributions and suggestions.  Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit <a href="https://cla.microsoft.com">https://cla.microsoft.com</a>.</p>
+
+<p>When you submit a pull request, a CLA-bot will automatically determine whether you need to provide a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions provided by the bot. You will only need to do this once across all repos using our CLA.</p>
+
+<p>This project has adopted the <a href="https://opensource.microsoft.com/codeofconduct/">Microsoft Open Source Code of Conduct</a>. For more information see the <a href="https://opensource.microsoft.com/codeofconduct/faq/">Code of Conduct FAQ</a> or contact <a href="mailto:opencode@microsoft.com">opencode@microsoft.com</a> with any additional questions or comments.</p>
+
+<p><img src="https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-ios%2Fsdk%2Fstorage%2FAzureStorageBlob%2FREADME.png" alt="Impressions"></p>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2020 <a class="link" href="https://azure.github.io/azure-sdk/" target="_blank" rel="external">Microsoft</a>. All rights reserved. (Last updated: 2020-04-24)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

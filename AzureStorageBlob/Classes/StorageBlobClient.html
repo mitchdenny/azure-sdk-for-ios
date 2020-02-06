@@ -1,0 +1,1661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>StorageBlobClient Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Class/StorageBlobClient" class="dashAnchor"></a>
+
+    <a title="StorageBlobClient Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          AzureStorageBlob 0.1 Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/Azure/azure-sdk-for-ios">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">AzureStorageBlob Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      StorageBlobClient Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BlobTransfer.html">BlobTransfer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/StorageBlobClient.html">StorageBlobClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/StorageBlobClient/ApiVersion.html">– ApiVersion</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AccessTier.html">AccessTier</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/BlobType.html">BlobType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/CopyStatus.html">CopyStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LeaseDuration.html">LeaseDuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LeaseState.html">LeaseState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LeaseStatus.html">LeaseStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/StorageHTTPHeader.html">StorageHTTPHeader</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/TransferState.html">TransferState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/TransferType.html">TransferType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/HTTPHeaders.html">HTTPHeaders</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BlobDownloadDelegate.html">BlobDownloadDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BlobDownloader.html">BlobDownloader</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BlobUploadDelegate.html">BlobUploadDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BlobUploader.html">BlobUploader</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Transfer.html">Transfer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/TransferDelegate.html">TransferDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/BlobItem.html">BlobItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/BlobProperties.html">BlobProperties</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ContainerItem.html">ContainerItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ContainerProperties.html">ContainerProperties</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/CustomerProvidedEncryptionKey.html">CustomerProvidedEncryptionKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/DownloadBlobOptions.html">DownloadBlobOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/EncryptionOptions.html">EncryptionOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LeaseAccessConditions.html">LeaseAccessConditions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ListBlobsOptions.html">ListBlobsOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ListBlobsOptions/ListBlobsInclude.html">– ListBlobsInclude</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ListContainersOptions.html">ListContainersOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ListContainersOptions/ListContainersInclude.html">– ListContainersInclude</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LocalURL.html">LocalURL</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LocalURL/KnownDirectory.html">– KnownDirectory</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ModifiedAccessConditions.html">ModifiedAccessConditions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/RangeOptions.html">RangeOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/StorageBlobClientOptions.html">StorageBlobClientOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/StorageSASCredential.html">StorageSASCredential</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/StorageSharedKeyCredential.html">StorageSharedKeyCredential</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/TransferProgress.html">TransferProgress</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/UploadBlobOptions.html">UploadBlobOptions</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>StorageBlobClient</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">StorageBlobClient</span> <span class="p">:</span> <span class="kt">PipelineClient</span></code></pre>
+
+                </div>
+              </div>
+            <p>A StorageBlobClient represents a Client to the Azure Storage Blob service allowing you to manipulate blobs within
+storage containers.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0bC6ClientC10ApiVersionO"></a>
+                    <a name="//apple_ref/swift/Enum/ApiVersion" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0bC6ClientC10ApiVersionO">ApiVersion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>API version of the Azure Storage Blob service to invoke. Defaults to the latest.</p>
+
+                        <a href="../Classes/StorageBlobClient/ApiVersion.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ApiVersion</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0bC6ClientC22maxConcurrentTransfersSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/maxConcurrentTransfers" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0bC6ClientC22maxConcurrentTransfersSivpZ">maxConcurrentTransfers</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The global maximum number of managed transfers that will be executed concurrently by all <code>StorageBlobClient</code>
+instances. The default value is <code><a href="../Classes/StorageBlobClient.html#/s:16AzureStorageBlob0bC6ClientC34maxConcurrentTransfersDefaultValueSivpZ">maxConcurrentTransfersDefaultValue</a></code>. To allow this value to be determined
+dynamically based on current system conditions, set it to <code><a href="../Classes/StorageBlobClient.html#/s:16AzureStorageBlob0bC6ClientC34maxConcurrentTransfersDynamicValueSivpZ">maxConcurrentTransfersDynamicValue</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">maxConcurrentTransfers</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0bC6ClientC34maxConcurrentTransfersDefaultValueSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/maxConcurrentTransfersDefaultValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0bC6ClientC34maxConcurrentTransfersDefaultValueSivpZ">maxConcurrentTransfersDefaultValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The default value of <code><a href="../Classes/StorageBlobClient.html#/s:16AzureStorageBlob0bC6ClientC22maxConcurrentTransfersSivpZ">maxConcurrentTransfers</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">maxConcurrentTransfersDefaultValue</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0bC6ClientC34maxConcurrentTransfersDynamicValueSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/maxConcurrentTransfersDynamicValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0bC6ClientC34maxConcurrentTransfersDynamicValueSivpZ">maxConcurrentTransfersDynamicValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set <code><a href="../Classes/StorageBlobClient.html#/s:16AzureStorageBlob0bC6ClientC22maxConcurrentTransfersSivpZ">maxConcurrentTransfers</a></code> equal to this value to allow the maximum number of managed transfers to be
+determined dynamically based on current system conditions.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">maxConcurrentTransfersDynamicValue</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0bC6ClientC7optionsAA0bcD7OptionsVvp"></a>
+                    <a name="//apple_ref/swift/Property/options" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0bC6ClientC7optionsAA0bcD7OptionsVvp">options</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Options provided to configure this <code>StorageBlobClient</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Structs/StorageBlobClientOptions.html">StorageBlobClientOptions</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0bC6ClientC16transferDelegateAA08TransferF0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/transferDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0bC6ClientC16transferDelegateAA08TransferF0_pSgvp">transferDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code><a href="../Protocols/TransferDelegate.html">TransferDelegate</a></code> to inform about events from transfers created by this <code>StorageBlobClient</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">transferDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TransferDelegate.html">TransferDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initializers"></a>
+                  <h3 class="section-name"><p>Initializers</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0bC6ClientC8endpoint10credential17withRestorationId0G7OptionsAC10Foundation3URLV_0A4Core14MSALCredentialVSSAA0bcdJ0VSgtKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(endpoint:credential:withRestorationId:withOptions:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0bC6ClientC8endpoint10credential17withRestorationId0G7OptionsAC10Foundation3URLV_0A4Core14MSALCredentialVSSAA0bcdJ0VSgtKcfc">init(endpoint:credential:withRestorationId:withOptions:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a Storage blob data client.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
+    <span class="nv">credential</span><span class="p">:</span> <span class="kt">MSALCredential</span><span class="p">,</span>
+    <span class="n">withRestorationId</span> <span class="nv">restorationId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="n">withOptions</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Structs/StorageBlobClientOptions.html">StorageBlobClientOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>endpoint</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The URL for the storage account&rsquo;s blob storage endpoint.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>credential</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>MSALCredential</code> object used to retrieve authentication tokens.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>restorationId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An identifier used to associate this client with transfers it creates. When a transfer is
+reloaded from disk (e.g. after an application crash), it can only be resumed once a client with the same
+<code>restorationId</code> has been initialized. If your application only uses a single <code>StorageBlobClient</code>, it is
+recommended to use a value unique to your application (e.g. &ldquo;MyApplication&rdquo;). If your application uses
+multiple clients with different configurations, use a value unique to both your application and the
+configuration (e.g. &ldquo;MyApplication.userClient&rdquo;).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Options used to configure the client.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0bC6ClientC10credential17withRestorationId0F7OptionsAcA0B13SASCredentialV_SSAA0bcdI0VSgtKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(credential:withRestorationId:withOptions:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0bC6ClientC10credential17withRestorationId0F7OptionsAcA0B13SASCredentialV_SSAA0bcdI0VSgtKcfc">init(credential:withRestorationId:withOptions:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a Storage blob data client.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="nv">credential</span><span class="p">:</span> <span class="kt"><a href="../Structs/StorageSASCredential.html">StorageSASCredential</a></span><span class="p">,</span>
+    <span class="n">withRestorationId</span> <span class="nv">restorationId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="n">withOptions</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Structs/StorageBlobClientOptions.html">StorageBlobClientOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>credential</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code><a href="../Structs/StorageSASCredential.html">StorageSASCredential</a></code> object used to retrieve the account&rsquo;s blob storage endpoint and
+authentication tokens.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>restorationId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An identifier used to associate this client with transfers it creates. When a transfer is
+reloaded from disk (e.g. after an application crash), it can only be resumed once a client with the same
+<code>restorationId</code> has been initialized. If your application only uses a single <code>StorageBlobClient</code>, it is
+recommended to use a value unique to your application (e.g. &ldquo;MyApplication&rdquo;). If your application uses
+multiple clients with different configurations, use a value unique to both your application and the
+configuration (e.g. &ldquo;MyApplication.userClient&rdquo;).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Options used to configure the client.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0bC6ClientC10credential17withRestorationId0F7OptionsAcA0B19SharedKeyCredentialV_SSAA0bcdI0VSgtKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(credential:withRestorationId:withOptions:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0bC6ClientC10credential17withRestorationId0F7OptionsAcA0B19SharedKeyCredentialV_SSAA0bcdI0VSgtKcfc">init(credential:withRestorationId:withOptions:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a Storage blob data client.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="nv">credential</span><span class="p">:</span> <span class="kt"><a href="../Structs/StorageSharedKeyCredential.html">StorageSharedKeyCredential</a></span><span class="p">,</span>
+    <span class="n">withRestorationId</span> <span class="nv">restorationId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="n">withOptions</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Structs/StorageBlobClientOptions.html">StorageBlobClientOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>credential</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code><a href="../Structs/StorageSharedKeyCredential.html">StorageSharedKeyCredential</a></code> object used to retrieve the account&rsquo;s blob storage endpoint and
+access key. <strong>WARNING</strong>: Shared keys are inherently insecure in end-user facing applications such as mobile
+and desktop apps. Shared keys provide full access to an entire storage account and should not be shared with
+end users. Since mobile and desktop apps are inherently end-user facing, it&rsquo;s highly recommended that
+storage account shared key credentials not be used in production for such applications.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>restorationId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An identifier used to associate this client with transfers it creates. When a transfer is
+reloaded from disk (e.g. after an application crash), it can only be resumed once a client with the same
+<code>restorationId</code> has been initialized. If your application only uses a single <code>StorageBlobClient</code>, it is
+recommended to use a value unique to your application (e.g. &ldquo;MyApplication&rdquo;). If your application uses
+multiple clients with different configurations, use a value unique to both your application and the
+configuration (e.g. &ldquo;MyApplication.userClient&rdquo;).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Options used to configure the client.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0bC6ClientC8endpoint17withRestorationId0F7OptionsAC10Foundation3URLV_SSAA0bcdI0VSgtKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(endpoint:withRestorationId:withOptions:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0bC6ClientC8endpoint17withRestorationId0F7OptionsAC10Foundation3URLV_SSAA0bcdI0VSgtKcfc">init(endpoint:withRestorationId:withOptions:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create an anonymous Storage blob data client.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
+    <span class="n">withRestorationId</span> <span class="nv">restorationId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="n">withOptions</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Structs/StorageBlobClientOptions.html">StorageBlobClientOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>endpoint</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The URL for the storage account&rsquo;s blob storage endpoint.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>restorationId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An identifier used to associate this client with transfers it creates. When a transfer is
+reloaded from disk (e.g. after an application crash), it can only be resumed once a client with the same
+<code>restorationId</code> has been initialized. If your application only uses a single <code>StorageBlobClient</code>, it is
+recommended to use a value unique to your application (e.g. &ldquo;MyApplication&rdquo;). If your application uses
+multiple clients with different configurations, use a value unique to both your application and the
+configuration (e.g. &ldquo;MyApplication.userClient&rdquo;).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Options used to configure the client.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Client%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Public Client Methods" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Public%20Client%20Methods"></a>
+                  <h3 class="section-name"><p>Public Client Methods</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0bC6ClientC8endpoint10forAccount12withProtocol0H6SuffixS2S_S2StFZ"></a>
+                    <a name="//apple_ref/swift/Method/endpoint(forAccount:withProtocol:withSuffix:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0bC6ClientC8endpoint10forAccount12withProtocol0H6SuffixS2S_S2StFZ">endpoint(forAccount:withProtocol:withSuffix:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Construct a URL for a storage account&rsquo;s blob storage endpoint from its account name.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">endpoint</span><span class="p">(</span>
+    <span class="n">forAccount</span> <span class="nv">accountName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="n">withProtocol</span> <span class="nv">endpointProtocol</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"https"</span><span class="p">,</span>
+    <span class="n">withSuffix</span> <span class="nv">endpointSuffix</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"core.windows.net"</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>accountName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The storage account name.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>endpointProtocol</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The storage account endpoint protocol.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>endpointSuffix</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The storage account endpoint suffix.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0bC6ClientC14listContainers11withOptions4thenyAA04ListfH0VSg_ys6ResultOy0A4Core15PagedCollectionCyAA13ContainerItemVGs5Error_pG_AL12HTTPResponseCSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/listContainers(withOptions:then:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0bC6ClientC14listContainers11withOptions4thenyAA04ListfH0VSg_ys6ResultOy0A4Core15PagedCollectionCyAA13ContainerItemVGs5Error_pG_AL12HTTPResponseCSgtctF">listContainers(withOptions:then:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>List storage containers in a storage account.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listContainers</span><span class="p">(</span>
+    <span class="n">withOptions</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Structs/ListContainersOptions.html">ListContainersOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="n">then</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">HTTPResultHandler</span><span class="o">&lt;</span><span class="kt">PagedCollection</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ContainerItem.html">ContainerItem</a></span><span class="o">&gt;&gt;</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code><a href="../Structs/ListContainersOptions.html">ListContainersOptions</a></code> object to control the list operation.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A completion handler that receives a <code>PagedCollection</code> of <code><a href="../Structs/ContainerItem.html">ContainerItem</a></code> objects on success.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0bC6ClientC9listBlobs11inContainer11withOptions4thenySS_AA04ListfJ0VSgys6ResultOy0A4Core15PagedCollectionCyAA0C4ItemVGs5Error_pG_AM12HTTPResponseCSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/listBlobs(inContainer:withOptions:then:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0bC6ClientC9listBlobs11inContainer11withOptions4thenySS_AA04ListfJ0VSgys6ResultOy0A4Core15PagedCollectionCyAA0C4ItemVGs5Error_pG_AM12HTTPResponseCSgtctF">listBlobs(inContainer:withOptions:then:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>List blobs within a storage container.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listBlobs</span><span class="p">(</span>
+    <span class="n">inContainer</span> <span class="nv">container</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="n">withOptions</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Structs/ListBlobsOptions.html">ListBlobsOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="n">then</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">HTTPResultHandler</span><span class="o">&lt;</span><span class="kt">PagedCollection</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/BlobItem.html">BlobItem</a></span><span class="o">&gt;&gt;</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>container</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The container name containing the blobs to list.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code><a href="../Structs/ListBlobsOptions.html">ListBlobsOptions</a></code> object to control the list operation.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A completion handler that receives a <code>PagedCollection</code> of <code><a href="../Structs/BlobItem.html">BlobItem</a></code> objects on success.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0bC6ClientC11rawDownload4blob13fromContainer6toFile11withOptions4thenySS_SSAA8LocalURLVAA0fcM0VSgys6ResultOyAA0C10Downloader_ps5Error_pG_0A4Core12HTTPResponseCSgtctKF"></a>
+                    <a name="//apple_ref/swift/Method/rawDownload(blob:fromContainer:toFile:withOptions:then:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0bC6ClientC11rawDownload4blob13fromContainer6toFile11withOptions4thenySS_SSAA8LocalURLVAA0fcM0VSgys6ResultOyAA0C10Downloader_ps5Error_pG_0A4Core12HTTPResponseCSgtctKF">rawDownload(blob:fromContainer:toFile:withOptions:then:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Download a blob from a storage container.</p>
+
+<p>This method will execute a raw HTTP GET in order to download a single blob to the destination. It is
+<strong>STRONGLY</strong> recommended that you use the <code>download()</code> method instead - that method will manage the transfer in
+the face of changing network conditions, and is able to transfer multiple blocks in parallel.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rawDownload</span><span class="p">(</span>
+    <span class="nv">blob</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="n">fromContainer</span> <span class="nv">container</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="n">toFile</span> <span class="nv">destinationUrl</span><span class="p">:</span> <span class="kt"><a href="../Structs/LocalURL.html">LocalURL</a></span><span class="p">,</span>
+    <span class="n">withOptions</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Structs/DownloadBlobOptions.html">DownloadBlobOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="n">then</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">HTTPResultHandler</span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/BlobDownloader.html">BlobDownloader</a></span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>blob</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the blob.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>container</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the container.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>destinationUrl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The URL to a file path on this device.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code><a href="../Structs/DownloadBlobOptions.html">DownloadBlobOptions</a></code> object to control the download operation.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A completion handler that receives a <code><a href="../Protocols/BlobDownloader.html">BlobDownloader</a></code> object on success.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0bC6ClientC9rawUpload4file11toContainer02asC010properties11withOptions4thenyAA8LocalURLV_S2SAA0C10PropertiesVSgAA0fcM0VSgys6ResultOyAA0C8Uploader_ps5Error_pG_0A4Core12HTTPResponseCSgtctKF"></a>
+                    <a name="//apple_ref/swift/Method/rawUpload(file:toContainer:asBlob:properties:withOptions:then:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0bC6ClientC9rawUpload4file11toContainer02asC010properties11withOptions4thenyAA8LocalURLV_S2SAA0C10PropertiesVSgAA0fcM0VSgys6ResultOyAA0C8Uploader_ps5Error_pG_0A4Core12HTTPResponseCSgtctKF">rawUpload(file:toContainer:asBlob:properties:withOptions:then:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Upload a blob to a storage container.</p>
+
+<p>This method will execute a raw HTTP PUT in order to upload a single file to the destination. It is <strong>STRONGLY</strong>
+recommended that you use the <code>upload()</code> method instead - that method will manage the transfer in the face of
+changing network conditions, and is able to transfer multiple blocks in parallel.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rawUpload</span><span class="p">(</span>
+    <span class="n">file</span> <span class="nv">sourceUrl</span><span class="p">:</span> <span class="kt"><a href="../Structs/LocalURL.html">LocalURL</a></span><span class="p">,</span>
+    <span class="n">toContainer</span> <span class="nv">container</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="n">asBlob</span> <span class="nv">blob</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="nv">properties</span><span class="p">:</span> <span class="kt"><a href="../Structs/BlobProperties.html">BlobProperties</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="n">withOptions</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Structs/UploadBlobOptions.html">UploadBlobOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="n">then</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">HTTPResultHandler</span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/BlobUploader.html">BlobUploader</a></span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sourceUrl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The URL to a file on this device</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>container</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the container.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>blob</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the blob.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>properties</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Properties to set on the resulting blob.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An <code><a href="../Structs/UploadBlobOptions.html">UploadBlobOptions</a></code> object to control the upload operation.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A completion handler that receives a <code><a href="../Protocols/BlobUploader.html">BlobUploader</a></code> object on success.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0bC6ClientC8download4blob13fromContainer6toFile11withOptionsAA8Transfer_pSgSS_SSAA8LocalURLVAA08DownloadcL0VSgtKF"></a>
+                    <a name="//apple_ref/swift/Method/download(blob:fromContainer:toFile:withOptions:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0bC6ClientC8download4blob13fromContainer6toFile11withOptionsAA8Transfer_pSgSS_SSAA8LocalURLVAA08DownloadcL0VSgtKF">download(blob:fromContainer:toFile:withOptions:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reliably download a blob from a storage container.</p>
+
+<p>This method will reliably manage the transfer of the blob from the cloud service to this device. When called,
+a transfer will be queued and a <code><a href="../Protocols/Transfer.html">Transfer</a></code> object will be returned that provides a handle to the transfer. This
+client&rsquo;s <code><a href="../Classes/StorageBlobClient.html#/s:16AzureStorageBlob0bC6ClientC16transferDelegateAA08TransferF0_pSgvp">transferDelegate</a></code> will be notified about state changes for all transfers managed by the client.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">download</span><span class="p">(</span>
+    <span class="nv">blob</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="n">fromContainer</span> <span class="nv">container</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="n">toFile</span> <span class="nv">destinationUrl</span><span class="p">:</span> <span class="kt"><a href="../Structs/LocalURL.html">LocalURL</a></span><span class="p">,</span>
+    <span class="n">withOptions</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Structs/DownloadBlobOptions.html">DownloadBlobOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/Transfer.html">Transfer</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>blob</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the blob.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>container</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the container.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>destinationUrl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The URL to a file path on this device.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code><a href="../Structs/DownloadBlobOptions.html">DownloadBlobOptions</a></code> object to control the download operation.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0bC6ClientC6upload4file11toContainer02asC010properties11withOptionsAA8Transfer_pSgAA8LocalURLV_S2SAA0C10PropertiesVAA06UploadcL0VSgtKF"></a>
+                    <a name="//apple_ref/swift/Method/upload(file:toContainer:asBlob:properties:withOptions:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0bC6ClientC6upload4file11toContainer02asC010properties11withOptionsAA8Transfer_pSgAA8LocalURLV_S2SAA0C10PropertiesVAA06UploadcL0VSgtKF">upload(file:toContainer:asBlob:properties:withOptions:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reliably upload a blob to a storage container.</p>
+
+<p>This method will reliably manage the transfer of the blob from this device to the cloud service. When called,
+a transfer will be queued and a <code><a href="../Protocols/Transfer.html">Transfer</a></code> object will be returned that provides a handle to the transfer. This
+client&rsquo;s <code><a href="../Classes/StorageBlobClient.html#/s:16AzureStorageBlob0bC6ClientC16transferDelegateAA08TransferF0_pSgvp">transferDelegate</a></code> will be notified about state changes for all transfers managed by the client.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">upload</span><span class="p">(</span>
+    <span class="n">file</span> <span class="nv">sourceUrl</span><span class="p">:</span> <span class="kt"><a href="../Structs/LocalURL.html">LocalURL</a></span><span class="p">,</span>
+    <span class="n">toContainer</span> <span class="nv">container</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="n">asBlob</span> <span class="nv">blob</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="nv">properties</span><span class="p">:</span> <span class="kt"><a href="../Structs/BlobProperties.html">BlobProperties</a></span><span class="p">,</span>
+    <span class="n">withOptions</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Structs/UploadBlobOptions.html">UploadBlobOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/Transfer.html">Transfer</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sourceUrl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The URL to a file on this device.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>container</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the container.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>blob</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the blob.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>properties</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Properties to set on the resulting blob.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An <code><a href="../Structs/UploadBlobOptions.html">UploadBlobOptions</a></code> object to control the upload operation.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Transfer%20Manager%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Transfer Manager Methods" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Transfer%20Manager%20Methods"></a>
+                  <h3 class="section-name"><p>Transfer Manager Methods</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0bC6ClientC13startManagingyyFZ"></a>
+                    <a name="//apple_ref/swift/Method/startManaging()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0bC6ClientC13startManagingyyFZ">startManaging()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Start the transfer management engine.</p>
+
+<p>Loads transfer state from disk, begins listening for network connectivity events, and resumes any incomplete
+transfers. This method <strong>MUST</strong> be called by your application in order for any managed transfers to occur.
+It&rsquo;s recommended to call this method from a background thread, at an opportune time after your app has started.</p>
+
+<p>Note that depending on the type of credential used by this <code>StorageBlobClient</code>, resuming transfers may cause a
+login UI to be displayed if the token for a paused transfer has expired. Because of this, it&rsquo;s not recommended
+to call this method from your <code>AppDelegate</code>. If you&rsquo;re using such a credential (e.g. <code>MSALCredential</code>) you
+should first inspect the list of transfers to determine if any are pending. If so, you should assume that
+calling this method may display a login UI, and call it in a user-appropriate context (e.g. display a &ldquo;pending
+transfers&rdquo; message and wait for explicit user confirmation to start the management engine). If you&rsquo;re not using
+such a credential, or there are no paused transfers, it is safe to call this method from your <code>AppDelegate</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">startManaging</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0bC6ClientC12stopManagingyyFZ"></a>
+                    <a name="//apple_ref/swift/Method/stopManaging()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0bC6ClientC12stopManagingyyFZ">stopManaging()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stop the transfer management engine.</p>
+
+<p>Pauses all incomplete transfers, stops listening for network connectivity events, and stores transfer state to
+disk. This method <strong>SHOULD</strong> be called by your application, either from your <code>AppDelegate</code> or from within a
+<code>ViewController</code>&lsquo;s lifecycle methods.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">stopManaging</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0bC6ClientC18cancelAllTransfersyyF"></a>
+                    <a name="//apple_ref/swift/Method/cancelAllTransfers()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0bC6ClientC18cancelAllTransfersyyF">cancelAllTransfers()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Cancel all currently active transfers having this client&rsquo;s <code>restorationId</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">cancelAllTransfers</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0bC6ClientC18removeAllTransfersyyF"></a>
+                    <a name="//apple_ref/swift/Method/removeAllTransfers()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0bC6ClientC18removeAllTransfersyyF">removeAllTransfers()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove all transfers having this client&rsquo;s <code>restorationId</code> from the database. All currently active transfers will
+be cancelled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeAllTransfers</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0bC6ClientC17pauseAllTransfersyyF"></a>
+                    <a name="//apple_ref/swift/Method/pauseAllTransfers()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0bC6ClientC17pauseAllTransfersyyF">pauseAllTransfers()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Pause all currently active transfers having this client&rsquo;s <code>restorationId</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">pauseAllTransfers</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0bC6ClientC18resumeAllTransfersyyF"></a>
+                    <a name="//apple_ref/swift/Method/resumeAllTransfers()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0bC6ClientC18resumeAllTransfersyyF">resumeAllTransfers()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Resume all currently paused transfers having this client&rsquo;s <code>restorationId</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">resumeAllTransfers</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0bC6ClientC9transfersSayAA8Transfer_pGvp"></a>
+                    <a name="//apple_ref/swift/Property/transfers" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0bC6ClientC9transfersSayAA8Transfer_pGvp">transfers</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve the list of all managed transfers having this client&rsquo;s <code>restorationId</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">transfers</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/Transfer.html">Transfer</a></span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0bC6ClientC12allowHeadersSaySSGvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/allowHeaders" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0bC6ClientC12allowHeadersSaySSGvpZ">allowHeaders</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Header values that are permitted to be logged from StorageBlobClient API calls.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">allowHeaders</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16AzureStorageBlob0bC6ClientC16allowQueryParamsSaySSGvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/allowQueryParams" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16AzureStorageBlob0bC6ClientC16allowQueryParamsSaySSGvpZ">allowQueryParams</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Query string parameter values that are permitted to be logged from StorageBlobClient API calls.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">allowQueryParams</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2020 <a class="link" href="https://azure.github.io/azure-sdk/" target="_blank" rel="external">Microsoft</a>. All rights reserved. (Last updated: 2020-04-24)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
