@@ -37,8 +37,3 @@ pr:
 
 stages:
   - template: ../../eng/pipelines/templates/stages/archetype-sdk-client.yml
-    parameters:
-      ServiceDirectory: appconfiguration
-      Artifacts:
-        - name: AzureAppConfiguration
-          safeName: AzureAppConfiguration

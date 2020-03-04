@@ -19,9 +19,6 @@ trigger:
       - hotfix/*
       - release/*
       - dev # TEMPORARY!
-  paths:
-    include:
-      - sdk/core/
 
 pr:
   branches:
@@ -31,9 +28,6 @@ pr:
       - hotfix/*
       - release/*
       - dev # TEMPORARY!
-  paths:
-    include:
-      - sdk/core/
 
 stages:
   - template: ../../eng/pipelines/templates/stages/archetype-sdk-client.yml

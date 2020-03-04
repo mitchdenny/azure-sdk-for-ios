@@ -1,6 +1,3 @@
-parameters:
-  ServiceDirectory: not-specified # Set a default that breaks in obvious ways.
-
 jobs:
   - job: 'Build'
 
@@ -26,7 +23,7 @@ jobs:
 
       - script: |
           set -o pipefail
-          xcodebuild -workspace AzureSDK.xcworkspace -scheme ${{parameters.ServiceDirectory}} -destination "platform=iOS Simulator,OS=13.3,name=iPhone 11 Pro Max" -configuration Release -derivedDataPath $(Build.ArtifactStagingDirectory) build | xcpretty -c
+          xcodebuild -workspace AzureSDK.xcworkspace -scheme all -destination "platform=iOS Simulator,OS=13.3,name=iPhone 11 Pro Max" -configuration Release -derivedDataPath $(Build.ArtifactStagingDirectory) build | xcpretty -c
         displayName: 'Build framework bundle'
 
       - upload: $(Build.ArtifactStagingDirectory)/Build/Products/Release-iphonesimulator
@@ -52,7 +49,7 @@ jobs:
 
       - script: |
           brew install swiftlint
-          swiftlint lint --path sdk/${{parameters.ServiceDirectory}} --quiet --reporter emoji
+          swiftlint lint --quiet --reporter emoji
         displayName: 'Lint framework sources'
 
       - script: |
