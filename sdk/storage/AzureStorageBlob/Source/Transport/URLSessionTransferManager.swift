@@ -68,7 +68,8 @@ internal final class URLSessionTransferManager: NSObject, TransferManager, URLSe
     }
 
     static var sharedPersistentContainer: NSPersistentContainer = {
-        guard let url = Bundle.main.url(forResource: "AzureStorage", withExtension: "momd"),
+        
+        guard let url = Bundle.main.url(forResource: "AzureStorage", withExtension: "xcdatamodeld"),
             let model = NSManagedObjectModel(contentsOf: url) else {
             fatalError("Unable to load AzureStorageBlob managed object model.")
         }
